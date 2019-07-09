@@ -3,55 +3,85 @@ import React from "react";
 import "./Stats.css";
 
 export function Stats(props) {
-    return (
-        <div className="stats">
-            <label className="stat skill">
-                Skill
-                <input
-                className="stat__input"
-                type="number"
-                value={props.skill}
-                />
-            </label>
+    const updateSkill = e => props.updateCharacter("skill", e.target.value);
 
-            <div className="stat stamina">
-                <label>
-                Stamina
-                <input
-                    className="stat__input"
-                    type="number"
-                    max={props.stamina.max}
-                    value={props.stamina.remaining}
-                />
-                </label>
-                <label className="sub-label">
-                <input
-                    className="stat__input stat__input--sub"
-                    type="number"
-                    value={props.stamina.max}
-                />
-                Max
-                </label>
-            </div>
-            <div className="stat luck">
-                <label>
-                Luck
-                <input
-                    className="stat__input"
-                    type="number"
-                    max={props.luck.max}
-                    value={props.luck.remaining}
-                />
-                </label>
-                <label className="sub-label">
-                <input
-                    type="number"
-                    className="stat__input stat__input--sub"
-                    value={props.luck.max}
-                />
-                Max
-                </label>
-            </div>
-        </div>
-    );
+	const updateMaxStamina = e =>
+		props.updateCharacter("stamina", {
+			...props.stamina,
+			max: e.target.value
+		});
+	const updateRemainingStamina = e =>
+		props.updateCharacter("stamina", {
+			...props.stamina,
+			remaining: e.target.value
+        });
+
+	const updateMaxLuck = e =>
+		props.updateCharacter("luck", {
+			...props.luck,
+			max: e.target.value
+		});
+	const updateRemainingLuck = e =>
+		props.updateCharacter("luck", {
+			...props.luck,
+			remaining: e.target.value
+        });
+
+
+	return (
+		<div className="stats">
+			<label className="stat skill">
+				Skill
+				<input
+					className="stat__input"
+					type="number"
+					value={props.skill}
+					onChange={updateSkill}
+				/>
+			</label>
+
+			<div className="stat stamina">
+				<label>
+					Stamina
+					<input
+						className="stat__input"
+						type="number"
+						max={props.stamina.max}
+                        value={props.stamina.remaining}
+                        onChange={updateRemainingStamina}
+					/>
+				</label>
+				<label className="sub-label">
+					<input
+						className="stat__input stat__input--sub"
+						type="number"
+                        value={props.stamina.max}
+                        onChange={updateMaxStamina}
+					/>
+					Max
+				</label>
+			</div>
+			<div className="stat luck">
+				<label>
+					Luck
+					<input
+						className="stat__input"
+						type="number"
+						max={props.luck.max}
+                        value={props.luck.remaining}
+                        onChange={updateRemainingLuck}
+					/>
+				</label>
+				<label className="sub-label">
+					<input
+						type="number"
+						className="stat__input stat__input--sub"
+                        value={props.luck.max}
+                        onChange={updateMaxLuck}
+					/>
+					Max
+				</label>
+			</div>
+		</div>
+	);
 }

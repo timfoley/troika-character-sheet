@@ -5,6 +5,10 @@ html {
   box-sizing: inherit;
 }
 
+#root,.App {
+  height: 100vh;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -63,17 +67,4 @@ input:disabled {
 
 input[type="range"] {
 	height: 0;
-}
-
-button {
-	background-color: #f4f4f4;
-	outline: none;
-}
-
-button:active {
-	background-color: #ddd;
-}
-
-button:focus {
-	border-color: #666;
 }
