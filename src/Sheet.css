@@ -1,0 +1,61 @@
+  .sheet {
+      display              : grid;
+      grid-gap             : 12px;
+      width                : 100%;
+      grid-template-columns: 1fr;
+      grid-template-areas  :
+          "left"
+          "right";
+  }
+
+  .left-grid {
+      grid-area: left;
+      display  : grid;
+      grid-template-areas:
+          "basics"
+          "stats"
+          "skills";
+  }
+
+
+
+  .right-grid {
+      grid-area: right;
+      display  : grid;
+      grid-gap : 8px;
+      grid-template-areas:
+          "weapons   weapons"
+          "inventory inventory"
+          "wearing   wearing"
+          "money     provisions";
+  }
+
+  @media (min-width: 500px) {
+      .left-grid {
+          grid-template-columns: 1fr 1fr 1fr 110px;
+          grid-template-areas  :
+              "basics basics basics basics"
+              "skills skills skills stats";
+      }
+
+      .right-grid {
+          grid-template-areas:
+              "weapons   weapons   weapons   weapons"
+              "inventory inventory inventory inventory"
+              "wearing   wearing   wearing   money"
+              "wearing   wearing   wearing   provisions";
+      }
+
+      .sheet {
+          padding: 20px;
+          border : 1px solid black;
+      }
+  }
+
+  @media (min-width: 800px) {
+      .sheet {
+          grid-template-areas:
+              "left  right ";
+          grid-template-columns: 1fr 1fr;
+      }
+  }
