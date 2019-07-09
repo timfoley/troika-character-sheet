@@ -9,11 +9,15 @@ export function Sheet(props) {
     return(
         <div className="sheet">
             <div className="left-grid">
-                <Basics char={props.char} />
+                <Basics
+                    name={props.char.name}
+                    background={props.char.background}
+                    special={props.char.special}
+                />
                 <Stats
-                    stamina={props.stamina}
-                    skill={props.skill}
-                    luck={props.luck}
+                    stamina={props.char.stamina}
+                    skill={props.char.skill}
+                    luck={props.char.luck}
                 />
             </div>
             <div className="right-grid">

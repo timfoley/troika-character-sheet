@@ -1,43 +1,43 @@
 .stats {
-    width: 100%;
-    grid-area: stats;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
+  width          : 100%;
+  grid-area      : stats;
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : wrap;
+  align-items    : flex-start;
+  justify-content: space-around;
+}
 
-  label {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-  }
+.stats label {
+  display       : flex;
+  flex-direction: column;
+  font-weight   : bold;
+}
 
-  input {
-    font-size: 2.5rem;
-    font-weight: bold;
-    width: auto;
-    margin-bottom: 0;
-    padding: .1em;
-    text-align: center;
-    border: 1px solid black;
-  }
+.stats input {
+  font-size    : 2.5rem;
+  font-weight  : bold;
+  width        : auto;
+  margin-bottom: 0;
+  padding      : .1em;
+  text-align   : center;
+  border       : 1px solid black;
+}
 
-  .stat__input--sub {
-    width: 60px;
-    border-top: none;
-    font-size: 1.5rem;
-  }
+.stat__input--sub {
+  width     : 60px;
+  border-top: none;
+  font-size : 1.5rem;
+}
 
-  .stat {
-    width: 80px;
-    margin-bottom: 10px;
-  }
+.stat {
+  width        : 80px;
+  margin-bottom: 10px;
+}
 
-  .sub-label {
-    font-weight: initial;
-    font-size: .9rem;
-    float: right;
-    text-align: right;
-  }
+.sub-label {
+  font-weight: initial;
+  font-size  : .9rem;
+  float      : right;
+  text-align : right;
+}
