@@ -14,7 +14,7 @@
   font-weight   : bold;
 }
 
-.stats input {
+.stat__input {
   font-size    : 2.5rem;
   font-weight  : bold;
   width        : auto;
