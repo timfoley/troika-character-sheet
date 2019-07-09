@@ -1,0 +1,29 @@
+.wearing {
+    grid-area: wearing;
+}
+
+.money {
+    grid-area: money;
+}
+
+.provisions {
+    grid-area: provisions;
+}
+
+.gear__label {
+    font-weight   : bold;
+    display       : flex;
+    flex-direction: column;
+}
+
+.gear__input {
+    height       : 100%;
+    width        : 100%;
+    margin       : 0;
+    border       : 1px solid black;
+    border-radius: 0;
+}
+
+.wearing textarea {
+    width: 100%;
+}
