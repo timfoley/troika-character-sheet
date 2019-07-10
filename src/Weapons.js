@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import "./Weapons.css";
@@ -22,7 +22,11 @@ function DamageBoxes(props) {
 				}`}
 				type="number"
 				onChange={e =>
-					props.setWeaponDamage(i, parseInt(e.target.value))
+					props.setWeaponDamage(
+						i,
+						parseInt(e.target.value),
+						props.wpnIndex
+					)
 				}
 				onBlur={props.updateCharacter}
 			/>
@@ -31,46 +35,6 @@ function DamageBoxes(props) {
 			</div>
 		</div>
 	));
-}
-
-function Weapon(props) {
-	const [weapon, setWeapon] = useState(props.weapon);
-
-	const setWeaponName = e => {
-		setWeapon({ ...weapon, name: e.target.value });
-	};
-
-	const setWeaponDamage = (index, value) => {
-		const newDamage = weapon.damage;
-		newDamage[index] = isNaN(value) ? null : value;
-		setWeapon({ ...weapon, damage: newDamage });
-	};
-
-	const updateCharacter = () => {
-		const newWeapons = props.weapons;
-		newWeapons[props.index] = weapon;
-		props.updateCharacter("weapons", newWeapons);
-	};
-
-	return (
-		<React.Fragment>
-			<div className="weapon__name">
-				<input
-					aria-label="weapon name"
-					type="text"
-					value={weapon.name}
-					onChange={setWeaponName}
-					onBlur={updateCharacter}
-				/>
-			</div>
-			<DamageBoxes
-				damage={weapon.damage}
-				name={weapon.name}
-				setWeaponDamage={setWeaponDamage}
-				updateCharacter={updateCharacter}
-			/>
-		</React.Fragment>
-	);
 }
 
 export function Weapons(props) {
@@ -87,25 +51,52 @@ export function Weapons(props) {
 		}
 	};
 
+	const setWeaponName = (index, value) => {
+		const newWeapons = props.weapons;
+		newWeapons[index] = {
+			...newWeapons[index],
+			name: value
+		};
+		props.updateCharacter("weapons", newWeapons);
+	};
+
+	const setWeaponDamage = (dmgIndex, value, wpnIndex) => {
+		const newWeapons = props.weapons;
+		const newDamage = newWeapons[wpnIndex].damage;
+		newDamage[dmgIndex] = isNaN(value) ? null : value;
+
+		newWeapons[wpnIndex].damage = newDamage;
+		props.updateCharacter("weapons", newWeapons);
+	};
+
 	return (
 		<div className="weapons">
 			<h2>Weapons</h2>
 			<div className="weapons__grid">
 				{props.weapons.map((weapon, index) => (
-					<Weapon
-						weapon={weapon}
-						index={index}
-						key={weapon.name}
-						weapons={props.weapons}
-						updateCharacter={props.updateCharacter}
-					/>
+					<React.Fragment key={weapon.name}>
+						<div className="weapon__name">
+							<input
+								aria-label="weapon name"
+								type="text"
+								defaultValue={weapon.name}
+								onChange={e => setWeaponName(index, e.target.value)}
+							/>
+						</div>
+						<DamageBoxes
+							damage={weapon.damage}
+							name={weapon.name}
+							setWeaponDamage={setWeaponDamage}
+							wpnIndex={index}
+						/>
+					</React.Fragment>
 				))}
 			</div>
 			<div
 				onClick={addWeapon}
 				onKeyPress={handleAddSkillKeyPress}
-				tabindex="0"
-				class="weapons__add-button clickable"
+				tabIndex="0"
+				className="weapons__add-button clickable"
 			>
 				Add Weapon
 			</div>

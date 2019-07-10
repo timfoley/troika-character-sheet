@@ -6,6 +6,17 @@ import "./Inventory.css";
 export function Inventory(props) {
 	const items = [];
 
+	const updateInventory = (index, value) => {
+		console.log({ index, value });
+		const newInventory = props.inventory;
+		newInventory[index] = {
+			name: value,
+			slots: 1,
+			notes: ""
+		};
+		props.updateCharacter("inventory", newInventory);
+	};
+
 	for (let i = 0; i < 12; i++) {
 		if (props.inventory[i]) {
 			items.push(
@@ -15,7 +26,8 @@ export function Inventory(props) {
 							id={i}
 							type="text"
 							aria-label={`Slot ${i + 1}`}
-							value={props.inventory[i].name}
+							defaultValue={props.inventory[i].name}
+							onChange={e => updateInventory(i, e.target.value)}
 						/>
 					</li>
 				</React.Fragment>
@@ -28,7 +40,8 @@ export function Inventory(props) {
 							id={i}
 							type="text"
 							aria-label={`Empty slot ${i + 1}`}
-							value=""
+							defaultValue=""
+							onChange={e => updateInventory(i, e.target.value)}
 						/>
 					</li>
 				</React.Fragment>

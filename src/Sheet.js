@@ -41,11 +41,15 @@ export function Sheet(props) {
 					weapons={props.character.weapons}
 					updateCharacter={updateCharacter}
 				/>
-				<Inventory inventory={props.character.inventory} />
+				<Inventory
+					inventory={props.character.inventory}
+					updateCharacter={updateCharacter}
+				/>
 				<OtherGear
 					wearing={props.character.wearing}
 					money={props.character.money}
 					provisions={props.character.provisions}
+					updateCharacter={updateCharacter}
 				/>
 			</div>
 		</div>
