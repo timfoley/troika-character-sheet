@@ -3,30 +3,30 @@ import React from "react";
 import "./Stats.css";
 
 export function Stats(props) {
-    const updateSkill = e => props.updateCharacter("skill", e.target.value);
+	const updateSkill = e =>
+		props.updateCharacter("skill", parseInt(e.target.value));
 
 	const updateMaxStamina = e =>
 		props.updateCharacter("stamina", {
 			...props.stamina,
-			max: e.target.value
+			max: parseInt(e.target.value)
 		});
 	const updateRemainingStamina = e =>
 		props.updateCharacter("stamina", {
 			...props.stamina,
-			remaining: e.target.value
-        });
+			remaining: parseInt(e.target.value)
+		});
 
 	const updateMaxLuck = e =>
 		props.updateCharacter("luck", {
 			...props.luck,
-			max: e.target.value
+			max: parseInt(e.target.value)
 		});
 	const updateRemainingLuck = e =>
 		props.updateCharacter("luck", {
 			...props.luck,
-			remaining: e.target.value
-        });
-
+			remaining: parseInt(e.target.value)
+		});
 
 	return (
 		<div className="stats">
@@ -47,16 +47,16 @@ export function Stats(props) {
 						className="stat__input"
 						type="number"
 						max={props.stamina.max}
-                        value={props.stamina.remaining}
-                        onChange={updateRemainingStamina}
+						value={props.stamina.remaining}
+						onChange={updateRemainingStamina}
 					/>
 				</label>
 				<label className="sub-label">
 					<input
 						className="stat__input stat__input--sub"
 						type="number"
-                        value={props.stamina.max}
-                        onChange={updateMaxStamina}
+						value={props.stamina.max}
+						onChange={updateMaxStamina}
 					/>
 					Max
 				</label>
@@ -68,16 +68,16 @@ export function Stats(props) {
 						className="stat__input"
 						type="number"
 						max={props.luck.max}
-                        value={props.luck.remaining}
-                        onChange={updateRemainingLuck}
+						value={props.luck.remaining}
+						onChange={updateRemainingLuck}
 					/>
 				</label>
 				<label className="sub-label">
 					<input
 						type="number"
 						className="stat__input stat__input--sub"
-                        value={props.luck.max}
-                        onChange={updateMaxLuck}
+						value={props.luck.max}
+						onChange={updateMaxLuck}
 					/>
 					Max
 				</label>
