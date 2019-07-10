@@ -12,7 +12,11 @@ export function OtherGear(props) {
 
 			<label className="gear__label money box">
 				Money
-				<input type="number" className="gear__input" value={props.money} />
+				<input
+					type="number"
+					className="gear__input"
+					value={props.money}
+				/>
 			</label>
 
 			<label className="gear__label provisions box">
@@ -26,3 +30,9 @@ export function OtherGear(props) {
 		</React.Fragment>
 	);
 }
+
+OtherGear.defaultProps = {
+	money: 0,
+	provisions: 0,
+	wearing: ""
+};

@@ -85,3 +85,9 @@ export function Stats(props) {
 		</div>
 	);
 }
+
+Stats.defaultProps = {
+	skill: 0,
+	stamina: { max: 0, remaining: 0 },
+	luck: { max: 0, remaining: 0 }
+};

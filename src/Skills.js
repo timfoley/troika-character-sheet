@@ -47,5 +47,11 @@ export function Skills(props) {
 
 Skills.propTypes = {
     skills: PropTypes.array,
-    skillStat: PropTypes.number
-}
+	skillStat: PropTypes.number,
+	updateCharacter: PropTypes.func
+};
+
+Skills.defaultProps = {
+	skills: [{ name: "", rank: 1 }],
+	skillStat: 0
+};

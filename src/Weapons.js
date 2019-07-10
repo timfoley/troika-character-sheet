@@ -49,5 +49,10 @@ export function Weapons(props) {
 }
 
 Weapons.propTypes = {
-	weapons: PropTypes.array
+	weapons: PropTypes.array,
+	updateCharacter: PropTypes.func
+};
+
+Weapons.defaultProps = {
+	weapons: [{ name: "", damage: [0, 0, 0, 0, 0, 0, 0] }]
 };

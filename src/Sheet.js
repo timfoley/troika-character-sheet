@@ -56,3 +56,7 @@ Sheet.propTypes = {
 	character: PropTypes.object,
 	setCharacter: PropTypes.func
 };
+
+Sheet.defaultProps = {
+	character: {}
+};
