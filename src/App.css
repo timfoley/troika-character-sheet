@@ -1,8 +1,8 @@
 :root {
 	--primary-light: #fffcf5;
 	--primary-dark: #333;
-	--accent-light: tomato;
-	--accent-dark: #53fff4;
+	--accent-light: #53fff4;
+	--accent-dark: #d90368;
 }
 
 html {
@@ -28,7 +28,7 @@ header {
 }
 
 h1 {
-	color: tomato;
+	color: var(--accent-dark);
 }
 
 html,
@@ -99,10 +99,6 @@ input:disabled {
 
 input[type="range"] {
 	height: 0;
-}
-
-.toggle-import {
-	text-align: right;
 }
 
 .clickable {
