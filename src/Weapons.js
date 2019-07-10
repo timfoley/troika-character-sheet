@@ -17,16 +17,10 @@ function DamageBoxes(props) {
 			<input
 				className="hide-spinners"
 				value={dmgValue}
-				aria-label={`${getRollFromIndex(i)} damage value for ${
-					props.name
-				}`}
+				aria-label={`${getRollFromIndex(i)} damage value for ${props.name}`}
 				type="number"
 				onChange={e =>
-					props.setWeaponDamage(
-						i,
-						parseInt(e.target.value),
-						props.wpnIndex
-					)
+					props.setWeaponDamage(i, parseInt(e.target.value), props.wpnIndex)
 				}
 				onBlur={props.updateCharacter}
 			/>
@@ -41,7 +35,7 @@ export function Weapons(props) {
 	const addWeapon = () => {
 		props.updateCharacter("weapons", [
 			...props.weapons,
-			{ name: "", damage: [0, 0, 0, 0, 0, 0, 0] }
+			{ name: "", damage: [0, 0, 0, 0, 0, 0, 0] },
 		]);
 	};
 
@@ -55,7 +49,7 @@ export function Weapons(props) {
 		const newWeapons = props.weapons;
 		newWeapons[index] = {
 			...newWeapons[index],
-			name: value
+			name: value,
 		};
 		props.updateCharacter("weapons", newWeapons);
 	};
@@ -106,9 +100,9 @@ export function Weapons(props) {
 
 Weapons.propTypes = {
 	weapons: PropTypes.array,
-	updateCharacter: PropTypes.func
+	updateCharacter: PropTypes.func,
 };
 
 Weapons.defaultProps = {
-	weapons: [{ name: "", damage: [0, 0, 0, 0, 0, 0, 0] }]
+	weapons: [{ name: "", damage: [0, 0, 0, 0, 0, 0, 0] }],
 };
