@@ -4,12 +4,25 @@ import PropTypes from "prop-types";
 import "./ImportExport.css";
 
 export function ImportExport(props) {
-	const charString = JSON.stringify(props.character);
+	const [prettyPrint, setPrettyPrint] = useState(false);
+
+	const charString = JSON.stringify(props.character, undefined, 4);
 
 	const [dataToImport, setDataToImport] = useState(charString);
 
 	const handleDataChange = e => {
 		setDataToImport(e.target.value);
+	};
+
+	const togglePrettyPrint = e => {
+		setPrettyPrint(e.target.checked);
+		setDataToImport(
+			JSON.stringify(
+				JSON.parse(dataToImport),
+				undefined,
+				prettyPrint ? 4 : 0
+			)
+		);
 	};
 
 	const saveUpdate = () => {
@@ -29,15 +42,24 @@ export function ImportExport(props) {
 
 	return (
 		<div className="import-export">
-			<label style={{ height: "100%" }}>
-				Import data here
-				<textarea
-					style={{ height: "100%" }}
-					value={dataToImport}
-					onChange={handleDataChange}
-					onBlur={saveUpdate}
-				/>
-			</label>
+			<div className="import-export__controls">
+				<label for="import-export">Enter data here: </label>
+				<label className="import-export__toggle">
+					<input
+						type="checkbox"
+						checked={prettyPrint}
+						onChange={togglePrettyPrint}
+					/>
+					Compact Mode
+				</label>
+			</div>
+			<textarea
+				id="import-export"
+				style={{ gridArea: "text-input", height: "100%" }}
+				value={dataToImport}
+				onChange={handleDataChange}
+				onBlur={saveUpdate}
+			/>
 		</div>
 	);
 }

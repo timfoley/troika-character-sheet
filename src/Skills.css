@@ -1,96 +1,96 @@
 .skills {
-    width         : 100%;
-    grid-area     : skills;
-    display       : flex;
-    flex-direction: column;
+	width: 100%;
+	grid-area: skills;
+	display: flex;
+	flex-direction: column;
 }
 
 .skills input {
-    margin-bottom: 0px;
-    border-radius: 0;
+	margin-bottom: 0px;
+	border-radius: 0;
 }
 
 .skills h2 {
-    margin-top: 0px;
+	margin-top: 0px;
 }
 
 .skills__grid {
-    display              : grid;
-    grid-gap             : 8px;
-    grid-template-columns: 1fr 36px 36px 36px;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: 1fr 36px 36px 36px;
 }
 
 .skills__grid__heading::after {
-    position   : relative;
-    left       : 6px;
-    font-weight: normal;
+	position: relative;
+	left: 6px;
+	font-weight: normal;
 }
 
 .skills__grid__heading.skill__box--rank::after {
-    content: "+";
+	content: "+";
 }
 
 .skills__grid__heading.skill__box--skill::after {
-    content: "=";
+	content: "=";
 }
 
 .skill__name__input {
-    border       : none;
-    border-bottom: 1px solid var(--primary-dark);
-    width        : 100%;
+	border: none;
+	border-bottom: 1px solid var(--primary-dark);
+	width: 100%;
 }
 
 .dark-mode .skill .skill__name {
-    grid-column: 1;
+	grid-column: 1;
 }
 
 .skill__box {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    text-align     : center;
-    border         : 1px solid var(--primary-dark);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 1px solid var(--primary-dark);
 }
 
 .dark-mode .skill__box {
-    border-color: var(--primary-light);
-    color       : var(--primary-light)
+	border-color: var(--primary-light);
+	color: var(--primary-light);
 }
 
 .skill__box--rank {
-    grid-column: 2;
-    width      : 100%;
-    font-weight: bold;
+	grid-column: 2;
+	width: 100%;
+	font-weight: bold;
 }
 
 .skill__box--skill-stat {
-    grid-column: 3;
+	grid-column: 3;
 }
 
 .skill__box--total {
-    grid-column: 4;
-    font-weight: bold;
-    color      : var(--accent-light);
-    font-size  : 1.5rem;
+	grid-column: 4;
+	font-weight: bold;
+	color: var(--accent-dark);
+	font-size: 1.5rem;
 }
 
 .dark-mode .skill__box--total {
-    color: var(--accent-dark);
+	color: var(--accent-dark);
 }
 
 .skills__grid__heading {
-    font-weight: normal;
-    color      : black;
-    text-align : right;
-    font-size  : .8rem;
+	font-weight: normal;
+	color: black;
+	text-align: right;
+	font-size: 0.8rem;
 }
 
 .skills .header {
-    font-size: .5rem;
+	font-size: 0.5rem;
 }
 
 .skills__add-button {
-    margin-left: auto;
-    font-size  : .8rem;
-    margin-top : 8px;
+	margin-left: auto;
+	font-size: 0.8rem;
+	margin-top: 8px;
 }

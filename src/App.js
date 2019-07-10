@@ -33,7 +33,7 @@ function App() {
 			)}
 			<div className="toggle-import clickable" onClick={toggleImport}>
 				{importOn
-					? "Return to Character"
+					? "◀ Return to Character"
 					: "Import/Export Character Data"}
 			</div>
 			{importOn && (
