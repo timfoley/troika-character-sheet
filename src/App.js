@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 
-import char from "./char";
 import { Sheet } from "./Sheet";
 import { ImportExport } from "./ImportExport";
 
