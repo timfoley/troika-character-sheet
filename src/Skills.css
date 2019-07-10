@@ -63,17 +63,6 @@
     font-weight: bold;
 }
 
-/* to hide the up/down arrows in the input */
-input.skill__box--rank::-webkit-outer-spin-button,
-input.skill__box--rank::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin            : 0;
-}
-
-input.skill__box--rank {
-    -moz-appearance: textfield;
-}
-
 .skill__box--skill-stat {
     grid-column: 3;
 }

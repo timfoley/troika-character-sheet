@@ -34,7 +34,7 @@ function Skill(props) {
 			</div>
 			<input
 				aria-label="skill rank"
-				className="skill__box skill__box--rank"
+				className="skill__box skill__box--rank hide-spinners"
 				type="number"
 				value={skill.rank}
 				onBlur={updateCharacter}

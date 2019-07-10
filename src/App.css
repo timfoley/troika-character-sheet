@@ -109,3 +109,14 @@ input[type="range"] {
 .clickable:hover {
 	text-decoration: underline;
 }
+
+/* to hide the up/down arrows in the input */
+.hide-spinners::-webkit-outer-spin-button,
+.hide-spinners::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin            : 0;
+}
+
+.hide-spinners {
+	-moz-appearance: textfield;
+}
