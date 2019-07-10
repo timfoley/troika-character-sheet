@@ -33,10 +33,14 @@ export function Sheet(props) {
 				<Skills
 					skills={props.character.skills}
 					skillStat={props.character.skill}
+					updateCharacter={updateCharacter}
 				/>
 			</div>
 			<div className="right-grid">
-				<Weapons weapons={props.character.weapons} />
+				<Weapons
+					weapons={props.character.weapons}
+					updateCharacter={updateCharacter}
+				/>
 				<Inventory inventory={props.character.inventory} />
 				<OtherGear
 					wearing={props.character.wearing}

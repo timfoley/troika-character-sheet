@@ -48,7 +48,7 @@
 
       .sheet {
           padding: 20px;
-          border : 1px solid var(--primary-light);
+          border : 1px solid var(--primary-dark);
       }
   }
 

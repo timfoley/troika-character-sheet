@@ -1,6 +1,8 @@
 .skills {
-    width    : 100%;
-    grid-area: skills;
+    width         : 100%;
+    grid-area     : skills;
+    display       : flex;
+    flex-direction: column;
 }
 
 .skills input {
@@ -61,6 +63,17 @@
     font-weight: bold;
 }
 
+/* to hide the up/down arrows in the input */
+input.skill__box--rank::-webkit-outer-spin-button,
+input.skill__box--rank::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin            : 0;
+}
+
+input.skill__box--rank {
+    -moz-appearance: textfield;
+}
+
 .skill__box--skill-stat {
     grid-column: 3;
 }
@@ -87,12 +100,8 @@
     font-size: .5rem;
 }
 
-input.skill__box--rank::-webkit-outer-spin-button,
-input.skill__box--rank::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin            : 0;
-}
-
-input.skill__box--rank {
-    -moz-appearance: textfield;
+.skills__add-button {
+    margin-left: auto;
+    font-size  : .8rem;
+    margin-top : 8px;
 }
