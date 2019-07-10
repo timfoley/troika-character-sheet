@@ -27,18 +27,20 @@ function App() {
 		<div className="App">
 			<header>
 				<h1>Troika! Character Sheet</h1>
-				<div className="toggle-import clickable" onClick={toggleImport}>
-					Import/Export Character Data
-				</div>
 			</header>
+			{!importOn && (
+				<Sheet setCharacter={setCharacter} character={character} />
+			)}
+			<div className="toggle-import clickable" onClick={toggleImport}>
+				{importOn
+					? "Return to Character"
+					: "Import/Export Character Data"}
+			</div>
 			{importOn && (
 				<ImportExport
 					character={character}
 					setCharacter={setCharacter}
 				/>
-			)}
-			{!importOn && (
-				<Sheet setCharacter={setCharacter} character={character} />
 			)}
 		</div>
 	);

@@ -102,7 +102,7 @@ input[type="range"] {
 }
 
 .toggle-import {
-	margin-bottom: 8px;
+	text-align: right;
 }
 
 .clickable {
