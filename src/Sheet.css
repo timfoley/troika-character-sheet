@@ -21,6 +21,7 @@
 .right-grid {
 	grid-area: right;
 	display: grid;
+	padding-bottom: 12px;
 	grid-gap: 8px;
 	grid-template-rows: min-content;
 	grid-template-areas:
@@ -39,6 +40,7 @@
 	}
 
 	.right-grid {
+		padding-bottom: 0;
 		grid-template-areas:
 			"weapons   weapons   weapons   weapons"
 			"inventory inventory inventory inventory"

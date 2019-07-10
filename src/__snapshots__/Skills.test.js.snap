@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  class="skills"
+>
+  <h2>
+    Advanced Skills and Spells
+  </h2>
+  <div
+    class="skills__grid"
+  >
+    <div
+      class="skills__grid__heading skill__box--rank"
+    >
+      Rank
+    </div>
+    <div
+      class="skills__grid__heading skill__box--skill"
+    >
+      Skill
+    </div>
+    <div
+      class="skills__grid__heading skill__box--total"
+    >
+      Total
+    </div>
+    <div
+      class="skill__name"
+    >
+      <input
+        aria-label="skill name"
+        class="skill__name__input"
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      aria-label="skill rank"
+      class="skill__box skill__box--rank hide-spinners"
+      type="number"
+      value="1"
+    />
+    <div
+      aria-label="skill stat"
+      class="skill__box skill__box--skill-stat"
+    >
+      0
+    </div>
+    <div
+      aria-label="skill total"
+      class="skill__box skill__box--total"
+    >
+      1
+    </div>
+    <div
+      class="skill__name"
+    >
+      <input
+        aria-label="skill name"
+        class="skill__name__input"
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      aria-label="skill rank"
+      class="skill__box skill__box--rank hide-spinners"
+      type="number"
+      value="1"
+    />
+    <div
+      aria-label="skill stat"
+      class="skill__box skill__box--skill-stat"
+    >
+      0
+    </div>
+    <div
+      aria-label="skill total"
+      class="skill__box skill__box--total"
+    >
+      1
+    </div>
+    <div
+      class="skill__name"
+    >
+      <input
+        aria-label="skill name"
+        class="skill__name__input"
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      aria-label="skill rank"
+      class="skill__box skill__box--rank hide-spinners"
+      type="number"
+      value="1"
+    />
+    <div
+      aria-label="skill stat"
+      class="skill__box skill__box--skill-stat"
+    >
+      0
+    </div>
+    <div
+      aria-label="skill total"
+      class="skill__box skill__box--total"
+    >
+      1
+    </div>
+    <div
+      class="skill__name"
+    >
+      <input
+        aria-label="skill name"
+        class="skill__name__input"
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      aria-label="skill rank"
+      class="skill__box skill__box--rank hide-spinners"
+      type="number"
+      value="1"
+    />
+    <div
+      aria-label="skill stat"
+      class="skill__box skill__box--skill-stat"
+    >
+      0
+    </div>
+    <div
+      aria-label="skill total"
+      class="skill__box skill__box--total"
+    >
+      1
+    </div>
+    <div
+      class="skill__name"
+    >
+      <input
+        aria-label="skill name"
+        class="skill__name__input"
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      aria-label="skill rank"
+      class="skill__box skill__box--rank hide-spinners"
+      type="number"
+      value="1"
+    />
+    <div
+      aria-label="skill stat"
+      class="skill__box skill__box--skill-stat"
+    >
+      0
+    </div>
+    <div
+      aria-label="skill total"
+      class="skill__box skill__box--total"
+    >
+      1
+    </div>
+  </div>
+  <div
+    area-label="click to add a skill"
+    class="skills__add-button clickable"
+    tabindex="0"
+  >
+    Add Skill
+  </div>
+</div>
+`;

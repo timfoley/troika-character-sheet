@@ -1,7 +1,7 @@
-import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import ReactDOM from "react-dom";
 import { getQueriesForElement } from "@testing-library/dom";
+import { render } from "@testing-library/react";
 
 import char from "./char";
 import { Basics } from "./Basics";
@@ -10,6 +10,11 @@ it("renders without crashing", () => {
 	const div = document.createElement("div");
 	ReactDOM.render(<Basics />, div);
 	ReactDOM.unmountComponentAtNode(div);
+});
+
+it("matches snapshot", () => {
+	const { container } = render(<Basics />);
+	expect(container.firstChild).toMatchSnapshot();
 });
 
 it("renders a text input with a label 'Name'", () => {

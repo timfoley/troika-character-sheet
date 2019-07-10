@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<label
+  class="gear__label wearing"
+>
+  Wearing
+  <textarea
+    class="gear__input"
+  />
+</label>
+`;

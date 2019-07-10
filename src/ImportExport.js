@@ -15,10 +15,14 @@ export function ImportExport(props) {
 	const saveUpdate = () => {
 		let newCharacter;
 
-		try {
-			newCharacter = JSON.parse(dataToImport);
-		} catch {
+		if (dataToImport === "") {
 			newCharacter = {};
+		} else {
+			try {
+				newCharacter = JSON.parse(dataToImport);
+			} catch {
+				newCharacter = props.character;
+			}
 		}
 		props.setCharacter(newCharacter);
 	};

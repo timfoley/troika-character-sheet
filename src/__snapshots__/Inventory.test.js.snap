@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  class="inventory"
+>
+  <h2>
+    Inventory
+  </h2>
+  <ol
+    class="inventory__grid"
+  >
+    <li
+      class="item"
+    >
+      <input
+        aria-label="Slot 1"
+        id="0"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 2"
+        id="1"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 3"
+        id="2"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 4"
+        id="3"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 5"
+        id="4"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 6"
+        id="5"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 7"
+        id="6"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 8"
+        id="7"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 9"
+        id="8"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 10"
+        id="9"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 11"
+        id="10"
+        type="text"
+        value=""
+      />
+    </li>
+    <li
+      class="item blank"
+    >
+      <input
+        aria-label="Empty slot 12"
+        id="11"
+        type="text"
+        value=""
+      />
+    </li>
+  </ol>
+</div>
+`;

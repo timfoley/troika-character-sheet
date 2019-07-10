@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  class="stats"
+>
+  <label
+    class="stat skill"
+  >
+    Skill
+    <input
+      class="stat__input"
+      type="number"
+      value="0"
+    />
+  </label>
+  <div
+    class="stat stamina"
+  >
+    <label>
+      Stamina
+      <input
+        class="stat__input"
+        max="0"
+        type="number"
+        value="0"
+      />
+    </label>
+    <label
+      class="sub-label"
+    >
+      <input
+        class="stat__input stat__input--sub"
+        type="number"
+        value="0"
+      />
+      Max
+    </label>
+  </div>
+  <div
+    class="stat luck"
+  >
+    <label>
+      Luck
+      <input
+        class="stat__input"
+        max="0"
+        type="number"
+        value="0"
+      />
+    </label>
+    <label
+      class="sub-label"
+    >
+      <input
+        class="stat__input stat__input--sub"
+        type="number"
+        value="0"
+      />
+      Max
+    </label>
+  </div>
+</div>
+`;

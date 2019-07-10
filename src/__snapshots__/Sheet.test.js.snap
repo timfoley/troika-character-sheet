@@ -1,0 +1,576 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  class="sheet"
+>
+  <div
+    class="left-grid"
+  >
+    <div
+      class="basics"
+    >
+      <label
+        class="basics__name"
+      >
+        Name
+        <input
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        class="basics__background"
+      >
+        Background
+        <input
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        class="basics__special"
+      >
+        Special
+        <textarea
+          rows="4"
+        />
+      </label>
+    </div>
+    <div
+      class="stats"
+    >
+      <label
+        class="stat skill"
+      >
+        Skill
+        <input
+          class="stat__input"
+          type="number"
+          value="0"
+        />
+      </label>
+      <div
+        class="stat stamina"
+      >
+        <label>
+          Stamina
+          <input
+            class="stat__input"
+            max="0"
+            type="number"
+            value="0"
+          />
+        </label>
+        <label
+          class="sub-label"
+        >
+          <input
+            class="stat__input stat__input--sub"
+            type="number"
+            value="0"
+          />
+          Max
+        </label>
+      </div>
+      <div
+        class="stat luck"
+      >
+        <label>
+          Luck
+          <input
+            class="stat__input"
+            max="0"
+            type="number"
+            value="0"
+          />
+        </label>
+        <label
+          class="sub-label"
+        >
+          <input
+            class="stat__input stat__input--sub"
+            type="number"
+            value="0"
+          />
+          Max
+        </label>
+      </div>
+    </div>
+    <div
+      class="skills"
+    >
+      <h2>
+        Advanced Skills and Spells
+      </h2>
+      <div
+        class="skills__grid"
+      >
+        <div
+          class="skills__grid__heading skill__box--rank"
+        >
+          Rank
+        </div>
+        <div
+          class="skills__grid__heading skill__box--skill"
+        >
+          Skill
+        </div>
+        <div
+          class="skills__grid__heading skill__box--total"
+        >
+          Total
+        </div>
+        <div
+          class="skill__name"
+        >
+          <input
+            aria-label="skill name"
+            class="skill__name__input"
+            type="text"
+            value=""
+          />
+        </div>
+        <input
+          aria-label="skill rank"
+          class="skill__box skill__box--rank hide-spinners"
+          type="number"
+          value="1"
+        />
+        <div
+          aria-label="skill stat"
+          class="skill__box skill__box--skill-stat"
+        >
+          0
+        </div>
+        <div
+          aria-label="skill total"
+          class="skill__box skill__box--total"
+        >
+          1
+        </div>
+        <div
+          class="skill__name"
+        >
+          <input
+            aria-label="skill name"
+            class="skill__name__input"
+            type="text"
+            value=""
+          />
+        </div>
+        <input
+          aria-label="skill rank"
+          class="skill__box skill__box--rank hide-spinners"
+          type="number"
+          value="1"
+        />
+        <div
+          aria-label="skill stat"
+          class="skill__box skill__box--skill-stat"
+        >
+          0
+        </div>
+        <div
+          aria-label="skill total"
+          class="skill__box skill__box--total"
+        >
+          1
+        </div>
+        <div
+          class="skill__name"
+        >
+          <input
+            aria-label="skill name"
+            class="skill__name__input"
+            type="text"
+            value=""
+          />
+        </div>
+        <input
+          aria-label="skill rank"
+          class="skill__box skill__box--rank hide-spinners"
+          type="number"
+          value="1"
+        />
+        <div
+          aria-label="skill stat"
+          class="skill__box skill__box--skill-stat"
+        >
+          0
+        </div>
+        <div
+          aria-label="skill total"
+          class="skill__box skill__box--total"
+        >
+          1
+        </div>
+        <div
+          class="skill__name"
+        >
+          <input
+            aria-label="skill name"
+            class="skill__name__input"
+            type="text"
+            value=""
+          />
+        </div>
+        <input
+          aria-label="skill rank"
+          class="skill__box skill__box--rank hide-spinners"
+          type="number"
+          value="1"
+        />
+        <div
+          aria-label="skill stat"
+          class="skill__box skill__box--skill-stat"
+        >
+          0
+        </div>
+        <div
+          aria-label="skill total"
+          class="skill__box skill__box--total"
+        >
+          1
+        </div>
+        <div
+          class="skill__name"
+        >
+          <input
+            aria-label="skill name"
+            class="skill__name__input"
+            type="text"
+            value=""
+          />
+        </div>
+        <input
+          aria-label="skill rank"
+          class="skill__box skill__box--rank hide-spinners"
+          type="number"
+          value="1"
+        />
+        <div
+          aria-label="skill stat"
+          class="skill__box skill__box--skill-stat"
+        >
+          0
+        </div>
+        <div
+          aria-label="skill total"
+          class="skill__box skill__box--total"
+        >
+          1
+        </div>
+      </div>
+      <div
+        area-label="click to add a skill"
+        class="skills__add-button clickable"
+        tabindex="0"
+      >
+        Add Skill
+      </div>
+    </div>
+  </div>
+  <div
+    class="right-grid"
+  >
+    <div
+      class="weapons"
+    >
+      <h2>
+        Weapons
+      </h2>
+      <div
+        class="weapons__grid"
+      >
+        <div
+          class="weapon__name"
+        >
+          <input
+            aria-label="weapon name"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="weapon__damage"
+        >
+          <input
+            aria-label="1 damage value for "
+            class="hide-spinners"
+            type="number"
+            value="0"
+          />
+          <div
+            aria-hidden="true"
+            class="weapon__damage__roll"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="weapon__damage"
+        >
+          <input
+            aria-label="2 damage value for "
+            class="hide-spinners"
+            type="number"
+            value="0"
+          />
+          <div
+            aria-hidden="true"
+            class="weapon__damage__roll"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="weapon__damage"
+        >
+          <input
+            aria-label="3 damage value for "
+            class="hide-spinners"
+            type="number"
+            value="0"
+          />
+          <div
+            aria-hidden="true"
+            class="weapon__damage__roll"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="weapon__damage"
+        >
+          <input
+            aria-label="4 damage value for "
+            class="hide-spinners"
+            type="number"
+            value="0"
+          />
+          <div
+            aria-hidden="true"
+            class="weapon__damage__roll"
+          >
+            4
+          </div>
+        </div>
+        <div
+          class="weapon__damage"
+        >
+          <input
+            aria-label="5 damage value for "
+            class="hide-spinners"
+            type="number"
+            value="0"
+          />
+          <div
+            aria-hidden="true"
+            class="weapon__damage__roll"
+          >
+            5
+          </div>
+        </div>
+        <div
+          class="weapon__damage"
+        >
+          <input
+            aria-label="6 damage value for "
+            class="hide-spinners"
+            type="number"
+            value="0"
+          />
+          <div
+            aria-hidden="true"
+            class="weapon__damage__roll"
+          >
+            6
+          </div>
+        </div>
+        <div
+          class="weapon__damage"
+        >
+          <input
+            aria-label="7+ damage value for "
+            class="hide-spinners"
+            type="number"
+            value="0"
+          />
+          <div
+            aria-hidden="true"
+            class="weapon__damage__roll"
+          >
+            7+
+          </div>
+        </div>
+      </div>
+      <div
+        class="weapons__add-button clickable"
+        tabindex="0"
+      >
+        Add Weapon
+      </div>
+    </div>
+    <div
+      class="inventory"
+    >
+      <h2>
+        Inventory
+      </h2>
+      <ol
+        class="inventory__grid"
+      >
+        <li
+          class="item"
+        >
+          <input
+            aria-label="Slot 1"
+            id="0"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 2"
+            id="1"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 3"
+            id="2"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 4"
+            id="3"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 5"
+            id="4"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 6"
+            id="5"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 7"
+            id="6"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 8"
+            id="7"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 9"
+            id="8"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 10"
+            id="9"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 11"
+            id="10"
+            type="text"
+            value=""
+          />
+        </li>
+        <li
+          class="item blank"
+        >
+          <input
+            aria-label="Empty slot 12"
+            id="11"
+            type="text"
+            value=""
+          />
+        </li>
+      </ol>
+    </div>
+    <label
+      class="gear__label wearing"
+    >
+      Wearing
+      <textarea
+        class="gear__input"
+      />
+    </label>
+    <label
+      class="gear__label money box"
+    >
+      Money
+      <input
+        class="gear__input"
+        type="number"
+        value="0"
+      />
+    </label>
+    <label
+      class="gear__label provisions box"
+    >
+      Provisions
+      <input
+        class="gear__input"
+        type="number"
+        value="0"
+      />
+    </label>
+  </div>
+</div>
+`;
