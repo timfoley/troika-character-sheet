@@ -7,12 +7,11 @@ export function Inventory(props) {
 	const items = [];
 
 	const updateInventory = (index, value) => {
-		console.log({ index, value });
 		const newInventory = props.inventory;
 		newInventory[index] = {
 			name: value,
 			slots: 1,
-			notes: ""
+			notes: "",
 		};
 		props.updateCharacter("inventory", newInventory);
 	};
@@ -58,9 +57,9 @@ export function Inventory(props) {
 }
 
 Inventory.propTypes = {
-	inventory: PropTypes.array
+	inventory: PropTypes.array,
 };
 
 Inventory.defaultProps = {
-	inventory: [{ name: "", notes: "", quantity: 1, slots: 1 }]
+	inventory: [{ name: "", notes: "", quantity: 1, slots: 1 }],
 };
