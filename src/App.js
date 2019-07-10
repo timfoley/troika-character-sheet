@@ -7,7 +7,7 @@ import { ImportExport } from "./ImportExport";
 
 function App() {
 	const [importOn, setImportOn] = useState(false);
-	const [character, setCharacter] = useState(char);
+	const [character, setCharacter] = useState();
 
 	const toggleImport = () => setImportOn(!importOn);
 
@@ -15,10 +15,18 @@ function App() {
 		<div className="App">
 			<header>
 				<h1>Troika! Character Sheet</h1>
-				<div onClick={toggleImport}>Import/Export Character Data</div>
+				<div
+					className="toggle-import clickable"
+					onClick={toggleImport}
+				>
+					Import/Export Character Data
+				</div>
 			</header>
 			{importOn && (
-				<ImportExport character={character} setCharacter={setCharacter} />
+				<ImportExport
+					character={character}
+					setCharacter={setCharacter}
+				/>
 			)}
 			{!importOn && (
 				<Sheet setCharacter={setCharacter} character={character} />

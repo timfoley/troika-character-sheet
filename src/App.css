@@ -97,3 +97,15 @@ input:disabled {
 input[type="range"] {
 	height: 0;
 }
+
+.toggle-import {
+	margin-bottom: 8px;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.clickable:hover {
+	text-decoration: underline;
+}
