@@ -28,12 +28,11 @@
 
 
 .weapon__name>input {
-    width         : 100%;
-    border        : none;
-    border-bottom : 1px solid black;
-    margin-bottom : 0;
-    text-transform: capitalize;
-    border-radius : 0;
+    width        : 100%;
+    border       : none;
+    border-bottom: 1px solid black;
+    margin-bottom: 0;
+    border-radius: 0;
 }
 
 .weapon__damage {

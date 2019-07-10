@@ -32,13 +32,13 @@
     content: "=";
 }
 
-.skill__name>input {
+.skill__name__input {
     border       : none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--primary-dark);
     width        : 100%;
 }
 
-.skill__name {
+.dark-mode .skill .skill__name {
     grid-column: 1;
 }
 
@@ -47,7 +47,12 @@
     justify-content: center;
     align-items    : center;
     text-align     : center;
-    border         : 1px solid black;
+    border         : 1px solid var(--primary-dark);
+}
+
+.dark-mode .skill__box {
+    border-color: var(--primary-light);
+    color       : var(--primary-light)
 }
 
 .skill__box--rank {
@@ -63,8 +68,12 @@
 .skill__box--total {
     grid-column: 4;
     font-weight: bold;
-    color      : tomato;
+    color      : var(--accent-light);
     font-size  : 1.5rem;
+}
+
+.dark-mode .skill__box--total {
+    color: var(--accent-dark);
 }
 
 .skills__grid__heading {
@@ -76,4 +85,14 @@
 
 .skills .header {
     font-size: .5rem;
+}
+
+input.skill__box--rank::-webkit-outer-spin-button,
+input.skill__box--rank::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin            : 0;
+}
+
+input.skill__box--rank {
+    -moz-appearance: textfield;
 }
