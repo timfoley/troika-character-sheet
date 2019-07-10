@@ -1,5 +1,7 @@
 .weapons {
-    grid-area: weapons;
+    grid-area     : weapons;
+    display       : flex;
+    flex-direction: column;
 }
 
 .weapons h2 {
@@ -59,4 +61,10 @@
     top      : -14px;
     left     : 8px;
     font-size: .7rem;
+}
+
+.weapons__add-button {
+    margin-left: auto;
+    font-size  : .8rem;
+    margin-top : 8px;
 }
