@@ -1,66 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import "./Skills.css";
-
-function Skill(props) {
-	const [skill, setSkill] = useState(props.skill);
-
-	const setSkillName = e => {
-		setSkill({ ...skill, name: e.target.value });
-	};
-
-	const setSkillRank = e => {
-		setSkill({ ...skill, rank: parseInt(e.target.value) });
-	};
-
-	const updateCharacter = e => {
-		const newSkills = props.skills;
-		newSkills[props.index] = skill;
-		props.updateCharacter("skills", newSkills);
-	};
-
-	return (
-		<React.Fragment>
-			<div className="skill__name">
-				<input
-					aria-label="skill name"
-					class="skill__name__input"
-					type="text"
-					value={skill.name}
-					onBlur={updateCharacter}
-					onChange={setSkillName}
-				/>
-			</div>
-			<input
-				aria-label="skill rank"
-				className="skill__box skill__box--rank hide-spinners"
-				type="number"
-				value={skill.rank}
-				onBlur={updateCharacter}
-				onChange={setSkillRank}
-			/>
-			<div
-				aria-label="skill stat"
-				className="skill__box skill__box--skill-stat"
-			>
-				{props.skillStat}
-			</div>
-			<div
-				aria-label="skill total"
-				className="skill__box skill__box--total"
-			>
-				{skill.rank + props.skillStat}
-			</div>
-		</React.Fragment>
-	);
-}
 
 export function Skills(props) {
 	const addSkill = () => {
 		props.updateCharacter("skills", [
 			...props.skills,
-			{ name: "", rank: 1 }
+			{ name: "", rank: 1 },
 		]);
 	};
 
@@ -68,6 +15,21 @@ export function Skills(props) {
 		if (e.which === 32 || e.key === "enter") {
 			addSkill();
 		}
+	};
+
+	const setSkillName = (i, name) => {
+		const newSkills = props.skills;
+		newSkills[i] = { ...newSkills[i], name };
+		props.updateCharacter("skills", newSkills);
+	};
+
+	const setSkillRank = (i, rank) => {
+		const newSkills = props.skills;
+		newSkills[i] = {
+			...newSkills[i],
+			rank,
+		};
+		props.updateCharacter("skills", newSkills);
 	};
 
 	return (
@@ -84,15 +46,40 @@ export function Skills(props) {
 					Total
 				</div>
 				{props.skills.map((skill, index) => (
-					<Skill
-						key={skill.name}
-						skill={skill}
-						skills={props.skills}
-						index={index}
-						skillStat={props.skillStat}
-						updateCharacter={props.updateCharacter}
-						tabIndex="0"
-					/>
+					<React.Fragment key={skill + index}>
+						<div className="skill__name">
+							<input
+								aria-label="skill name"
+								className="skill__name__input"
+								type="text"
+								defaultValue={skill.name}
+								onChange={e =>
+									setSkillName(index, e.target.value)
+								}
+							/>
+						</div>
+						<input
+							aria-label="skill rank"
+							className="skill__box skill__box--rank hide-spinners"
+							type="number"
+							defaultValue={skill.rank}
+							onChange={e =>
+								setSkillRank(index, parseInt(e.target.value))
+							}
+						/>
+						<div
+							aria-label="skill stat"
+							className="skill__box skill__box--skill-stat"
+						>
+							{props.skillStat}
+						</div>
+						<div
+							aria-label="skill total"
+							className="skill__box skill__box--total"
+						>
+							{skill.rank + props.skillStat}
+						</div>
+					</React.Fragment>
 				))}
 			</div>
 			<div
@@ -111,10 +98,16 @@ export function Skills(props) {
 Skills.propTypes = {
 	skills: PropTypes.array,
 	skillStat: PropTypes.number,
-	updateCharacter: PropTypes.func
+	updateCharacter: PropTypes.func,
 };
 
 Skills.defaultProps = {
-	skills: [{ name: "", rank: 1 }],
-	skillStat: 0
+	skills: [
+		{ name: "", rank: 1 },
+		{ name: "", rank: 1 },
+		{ name: "", rank: 1 },
+		{ name: "", rank: 1 },
+		{ name: "", rank: 1 },
+	],
+	skillStat: 0,
 };

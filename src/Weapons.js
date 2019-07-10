@@ -17,10 +17,16 @@ function DamageBoxes(props) {
 			<input
 				className="hide-spinners"
 				value={dmgValue}
-				aria-label={`${getRollFromIndex(i)} damage value for ${props.name}`}
+				aria-label={`${getRollFromIndex(i)} damage value for ${
+					props.name
+				}`}
 				type="number"
 				onChange={e =>
-					props.setWeaponDamage(i, parseInt(e.target.value), props.wpnIndex)
+					props.setWeaponDamage(
+						i,
+						parseInt(e.target.value),
+						props.wpnIndex
+					)
 				}
 				onBlur={props.updateCharacter}
 			/>
@@ -68,13 +74,15 @@ export function Weapons(props) {
 			<h2>Weapons</h2>
 			<div className="weapons__grid">
 				{props.weapons.map((weapon, index) => (
-					<React.Fragment key={weapon.name}>
+					<React.Fragment key={"weapon" + index}>
 						<div className="weapon__name">
 							<input
 								aria-label="weapon name"
 								type="text"
 								defaultValue={weapon.name}
-								onChange={e => setWeaponName(index, e.target.value)}
+								onChange={e =>
+									setWeaponName(index, e.target.value)
+								}
 							/>
 						</div>
 						<DamageBoxes
