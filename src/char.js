@@ -43,13 +43,13 @@ export default {
 	],
 	weapons: [
 		{
-			name: "steak knife",
+			name: "Steak Knife",
 			damage: [2, 2, 2, 2, 4, 8, 10],
 			twoHanded: false,
 			armorPiercing: false
 		},
 		{
-			name: "meat tenderizer",
+			name: "Meat Tenderizer",
 			damage: [1, 2, 4, 6, 8, 10, 12],
 			twoHanded: false,
 			armorPiercing: true
