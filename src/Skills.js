@@ -32,21 +32,9 @@ export function Skills(props) {
 		}
 	};
 
-	const isTotalZero = rank => rank + props.skillStat === 0;
-
-	const getRankClass = rank => {
-		let className = "skill__box skill__box--rank hide-spinners ";
-		return isTotalZero(rank) ? className + "zero-to-hide" : className;
-	};
-
-	const getSkillClass = rank => {
-		let className = "skill__box skill__box--skill-stat ";
-		return isTotalZero(rank) ? className + "zero-to-hide" : className;
-	};
-
 	const getTotalClass = rank => {
 		let className = "skill__box skill__box--total ";
-		return isTotalZero(rank) ? className + "zero-to-hide" : className;
+		return rank === 0 ? className + "zero-to-hide" : className;
 	};
 
 	return (

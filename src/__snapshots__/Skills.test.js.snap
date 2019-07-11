@@ -37,21 +37,21 @@ exports[`matches snapshot 1`] = `
     </div>
     <input
       aria-label="skill rank"
-      class="skill__box skill__box--rank hide-spinners"
+      class="skill__box skill__box--rank hide-spinners zero-to-hide"
       type="number"
-      value="1"
+      value="0"
     />
     <div
       aria-label="skill stat"
-      class="skill__box skill__box--skill-stat"
+      class="skill__box skill__box--skill-stat zero-to-hide"
     >
       0
     </div>
     <div
       aria-label="skill total"
-      class="skill__box skill__box--total"
+      class="skill__box skill__box--total zero-to-hide"
     >
-      1
+      0
     </div>
     <div
       class="skill__name"
@@ -65,21 +65,21 @@ exports[`matches snapshot 1`] = `
     </div>
     <input
       aria-label="skill rank"
-      class="skill__box skill__box--rank hide-spinners"
+      class="skill__box skill__box--rank hide-spinners zero-to-hide"
       type="number"
-      value="1"
+      value="0"
     />
     <div
       aria-label="skill stat"
-      class="skill__box skill__box--skill-stat"
+      class="skill__box skill__box--skill-stat zero-to-hide"
     >
       0
     </div>
     <div
       aria-label="skill total"
-      class="skill__box skill__box--total"
+      class="skill__box skill__box--total zero-to-hide"
     >
-      1
+      0
     </div>
     <div
       class="skill__name"
@@ -93,21 +93,21 @@ exports[`matches snapshot 1`] = `
     </div>
     <input
       aria-label="skill rank"
-      class="skill__box skill__box--rank hide-spinners"
+      class="skill__box skill__box--rank hide-spinners zero-to-hide"
       type="number"
-      value="1"
+      value="0"
     />
     <div
       aria-label="skill stat"
-      class="skill__box skill__box--skill-stat"
+      class="skill__box skill__box--skill-stat zero-to-hide"
     >
       0
     </div>
     <div
       aria-label="skill total"
-      class="skill__box skill__box--total"
+      class="skill__box skill__box--total zero-to-hide"
     >
-      1
+      0
     </div>
     <div
       class="skill__name"
@@ -121,21 +121,21 @@ exports[`matches snapshot 1`] = `
     </div>
     <input
       aria-label="skill rank"
-      class="skill__box skill__box--rank hide-spinners"
+      class="skill__box skill__box--rank hide-spinners zero-to-hide"
       type="number"
-      value="1"
+      value="0"
     />
     <div
       aria-label="skill stat"
-      class="skill__box skill__box--skill-stat"
+      class="skill__box skill__box--skill-stat zero-to-hide"
     >
       0
     </div>
     <div
       aria-label="skill total"
-      class="skill__box skill__box--total"
+      class="skill__box skill__box--total zero-to-hide"
     >
-      1
+      0
     </div>
     <div
       class="skill__name"
@@ -149,21 +149,21 @@ exports[`matches snapshot 1`] = `
     </div>
     <input
       aria-label="skill rank"
-      class="skill__box skill__box--rank hide-spinners"
+      class="skill__box skill__box--rank hide-spinners zero-to-hide"
       type="number"
-      value="1"
+      value="0"
     />
     <div
       aria-label="skill stat"
-      class="skill__box skill__box--skill-stat"
+      class="skill__box skill__box--skill-stat zero-to-hide"
     >
       0
     </div>
     <div
       aria-label="skill total"
-      class="skill__box skill__box--total"
+      class="skill__box skill__box--total zero-to-hide"
     >
-      1
+      0
     </div>
   </div>
   <div
