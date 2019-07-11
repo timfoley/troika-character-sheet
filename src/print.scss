@@ -59,5 +59,13 @@
 				"wearing   wearing   wearing   money"
 				"wearing   wearing   wearing   provisions";
 		}
+
+		input[value="0"] {
+			color: transparent;
+		}
+
+		.zero-to-hide {
+			color: transparent;
+		}
 	}
 }

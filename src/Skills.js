@@ -32,6 +32,23 @@ export function Skills(props) {
 		}
 	};
 
+	const isTotalZero = rank => rank + props.skillStat === 0;
+
+	const getRankClass = rank => {
+		let className = "skill__box skill__box--rank hide-spinners ";
+		return isTotalZero(rank) ? className + "zero-to-hide" : className;
+	};
+
+	const getSkillClass = rank => {
+		let className = "skill__box skill__box--skill-stat ";
+		return isTotalZero(rank) ? className + "zero-to-hide" : className;
+	};
+
+	const getTotalClass = rank => {
+		let className = "skill__box skill__box--total ";
+		return isTotalZero(rank) ? className + "zero-to-hide" : className;
+	};
+
 	return (
 		<div className="skills">
 			<h2>Advanced Skills and Spells</h2>
@@ -60,7 +77,9 @@ export function Skills(props) {
 						</div>
 						<input
 							aria-label="skill rank"
-							className="skill__box skill__box--rank hide-spinners"
+							className={`skill__box skill__box--rank hide-spinners ${
+								skill.rank === 0 ? "zero-to-hide" : ""
+							}`}
 							type="number"
 							value={skill.rank}
 							onChange={e =>
@@ -69,13 +88,15 @@ export function Skills(props) {
 						/>
 						<div
 							aria-label="skill stat"
-							className="skill__box skill__box--skill-stat"
+							className={`skill__box skill__box--skill-stat ${
+								props.skillStat === 0 ? "zero-to-hide" : ""
+							}`}
 						>
 							{props.skillStat}
 						</div>
 						<div
 							aria-label="skill total"
-							className="skill__box skill__box--total"
+							className={getTotalClass(skill.rank)}
 						>
 							{skill.rank + props.skillStat}
 						</div>
