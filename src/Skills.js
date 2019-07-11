@@ -4,19 +4,6 @@ import PropTypes from "prop-types";
 import "./Skills.css";
 
 export function Skills(props) {
-	const addSkill = () => {
-		props.updateCharacter("skills", [
-			...props.skills,
-			{ name: "", rank: 1 },
-		]);
-	};
-
-	const handleAddSkillKeyPress = e => {
-		if (e.which === 32 || e.key === "enter") {
-			addSkill();
-		}
-	};
-
 	const setSkillName = (i, name) => {
 		const newSkills = props.skills;
 		newSkills[i] = { ...newSkills[i], name };
@@ -30,6 +17,19 @@ export function Skills(props) {
 			rank,
 		};
 		props.updateCharacter("skills", newSkills);
+	};
+
+	const addSkill = () => {
+		props.updateCharacter("skills", [
+			...props.skills,
+			{ name: "", rank: 0 },
+		]);
+	};
+
+	const handleAddSkillKeyPress = e => {
+		if (e.which === 32 || e.key === "enter") {
+			addSkill();
+		}
 	};
 
 	return (
@@ -52,7 +52,7 @@ export function Skills(props) {
 								aria-label="skill name"
 								className="skill__name__input"
 								type="text"
-								defaultValue={skill.name}
+								value={skill.name}
 								onChange={e =>
 									setSkillName(index, e.target.value)
 								}
@@ -62,7 +62,7 @@ export function Skills(props) {
 							aria-label="skill rank"
 							className="skill__box skill__box--rank hide-spinners"
 							type="number"
-							defaultValue={skill.rank}
+							value={skill.rank}
 							onChange={e =>
 								setSkillRank(index, parseInt(e.target.value))
 							}
@@ -103,11 +103,11 @@ Skills.propTypes = {
 
 Skills.defaultProps = {
 	skills: [
-		{ name: "", rank: 1 },
-		{ name: "", rank: 1 },
-		{ name: "", rank: 1 },
-		{ name: "", rank: 1 },
-		{ name: "", rank: 1 },
+		{ name: "", rank: 0 },
+		{ name: "", rank: 0 },
+		{ name: "", rank: 0 },
+		{ name: "", rank: 0 },
+		{ name: "", rank: 0 },
 	],
 	skillStat: 0,
 };
