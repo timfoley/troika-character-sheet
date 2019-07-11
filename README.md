@@ -6,18 +6,20 @@ I wanted it to be as useful as possible while still staying nice and simple. You
 This is still very much a work-in-progress!
 
 # What It's Made Of
-It's mostly just React (thanks [`create-react-app`](https://facebook.github.io/create-react-app/)) with a lot of help from the amazing CSS Grid spec.
+It's mostly just React (thanks [`create-react-app`](https://facebook.github.io/create-react-app/)) with a lot of help from the amazing [CSS Grid spec](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
 
 ## To Dos:
 ### Definitely:
-- [ ] set up print stylesheets
 - [ ] figure out a good way to let you delete skills and weapons
   - right now the best way is to edit the data directly in the import/export screen
 - [ ] drag-and-drop reordering of skills, weapons, and inventory
 - [ ] figure out a way to keep track of advancement ticks
 - [ ] auto-character generation
+- [x] set up print stylesheets (mostly done, they could be better though)
 
 ### Maybe (pending feedback and testing)
 - [ ] host data somewhere?
   - on making a character, you get a read-only, shareable link and a private link with write-access
 - [ ] click to test a skill/roll damage
+- [ ] handle additional inventory/gear fields
+  - i.e. how to deal with quantity, gear that takes up multiple slots, notes, etc.
