@@ -18,7 +18,9 @@ function App() {
 
 	// save character to localstorage on update
 	useEffect(() => {
-		localStorage.setItem("character", JSON.stringify(character));
+		if (typeof character === "object" || character === "") {
+			localStorage.setItem("character", JSON.stringify(character));
+		}
 	}, [character]);
 
 	const toggleImport = () => setImportOn(!importOn);
