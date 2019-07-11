@@ -1,70 +1,69 @@
 .weapons {
-    grid-area     : weapons;
-    display       : flex;
-    flex-direction: column;
+	grid-area: weapons;
+	display: flex;
+	flex-direction: column;
 }
 
 .weapons h2 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 .weapons__grid {
-    display              : grid;
-    grid-gap             : 2px;
-    row-gap              : 12px;
-    grid-template-columns: 7fr repeat(7, 1fr);
+	display: grid;
+	grid-gap: 2px;
+	row-gap: 12px;
+	grid-template-columns: 7fr repeat(7, 1fr);
 }
 
 @media (min-width: 500px) {
-    .weapons__grid {
-        display              : grid;
-        grid-gap             : 8px;
-        row-gap              : 12px;
-        grid-template-columns: 1fr repeat(7, 26px);
-    }
+	.weapons__grid {
+		display: grid;
+		grid-gap: 8px;
+		row-gap: 12px;
+		grid-template-columns: 1fr repeat(7, 26px);
+	}
 
-    .weapon__damage {
-        height: 24px;
-    }
+	.weapon__damage {
+		height: 24px;
+	}
 }
 
-
-.weapon__name>input {
-    width        : 100%;
-    border       : none;
-    border-bottom: 1px solid black;
-    margin-bottom: 0;
-    border-radius: 0;
+.weapon__name > input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid black;
+	margin-bottom: 0;
+	border-radius: 0;
 }
 
 .weapon__damage {
-    margin-top: auto;
-    border    : 1px solid black;
-    position  : relative;
+	margin-top: auto;
+	border: 1px solid black;
+	position: relative;
 }
 
 .weapon__damage input {
-    width          : 100%;
-    height         : 100%;
-    padding        : 0;
-    margin         : 0;
-    border         : none;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    text-align     : center;
-    font-weight    : bold;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
 }
 
 .weapon__damage__roll {
-    position : absolute;
-    top      : -14px;
-    left     : 8px;
-    font-size: .7rem;
+	position: absolute;
+	top: -14px;
+	left: 8px;
+	font-size: 0.7rem;
 }
 
 .weapons__add-button {
-    margin-left: auto;
-    font-size  : .8rem;
-    margin-top : 8px;
+	margin-left: auto;
+	font-size: 0.8rem;
+	margin-top: 8px;
 }

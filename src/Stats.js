@@ -9,23 +9,23 @@ export function Stats(props) {
 	const updateMaxStamina = e =>
 		props.updateCharacter("stamina", {
 			...props.stamina,
-			max: parseInt(e.target.value)
+			max: parseInt(e.target.value),
 		});
 	const updateRemainingStamina = e =>
 		props.updateCharacter("stamina", {
 			...props.stamina,
-			remaining: parseInt(e.target.value)
+			remaining: parseInt(e.target.value),
 		});
 
 	const updateMaxLuck = e =>
 		props.updateCharacter("luck", {
 			...props.luck,
-			max: parseInt(e.target.value)
+			max: parseInt(e.target.value),
 		});
 	const updateRemainingLuck = e =>
 		props.updateCharacter("luck", {
 			...props.luck,
-			remaining: parseInt(e.target.value)
+			remaining: parseInt(e.target.value),
 		});
 
 	return (
@@ -33,7 +33,7 @@ export function Stats(props) {
 			<label className="stat skill">
 				Skill
 				<input
-					className="stat__input"
+					className="stat__input stat__input--main"
 					type="number"
 					value={props.skill}
 					onChange={updateSkill}
@@ -44,7 +44,7 @@ export function Stats(props) {
 				<label>
 					Stamina
 					<input
-						className="stat__input"
+						className="stat__input stat__input--main"
 						type="number"
 						max={props.stamina.max}
 						value={props.stamina.remaining}
@@ -65,7 +65,7 @@ export function Stats(props) {
 				<label>
 					Luck
 					<input
-						className="stat__input"
+						className="stat__input stat__input--main"
 						type="number"
 						max={props.luck.max}
 						value={props.luck.remaining}
@@ -89,5 +89,5 @@ export function Stats(props) {
 Stats.defaultProps = {
 	skill: 0,
 	stamina: { max: 0, remaining: 0 },
-	luck: { max: 0, remaining: 0 }
+	luck: { max: 0, remaining: 0 },
 };

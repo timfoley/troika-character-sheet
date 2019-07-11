@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import "./print.scss";
 
 import { Sheet } from "./Sheet";
 import { ImportExport } from "./ImportExport";

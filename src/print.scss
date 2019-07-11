@@ -1,0 +1,63 @@
+@media print {
+	body,
+	.App {
+		*,
+		input,
+		div,
+		textarea,
+		label {
+			background-color: white;
+		}
+
+		background-color: white;
+		height: 90vh;
+
+		h1 {
+			font-size: 16pt;
+			margin-bottom: 0;
+			break-after: avoid;
+		}
+
+		.clickable {
+			display: none;
+		}
+
+		.stat__input--main {
+			height: 70px;
+		}
+
+		.stamina,
+		.luck {
+			.stat__input--main {
+				font-size: 1.5rem;
+				margin-top: 10px;
+				text-align: left;
+				padding-left: 4px;
+				padding-top: 40px;
+			}
+		}
+
+		.sheet {
+			grid-template-areas: "left  right ";
+			grid-template-columns: 1fr 1fr;
+			padding: 20px;
+			border: 1px solid var(--primary-dark);
+		}
+
+		.left-grid {
+			grid-template-columns: 1fr 1fr 1fr 110px;
+			grid-template-areas:
+				"basics basics basics basics"
+				"skills skills skills stats";
+		}
+
+		.right-grid {
+			padding-bottom: 0;
+			grid-template-areas:
+				"weapons   weapons   weapons   weapons"
+				"inventory inventory inventory inventory"
+				"wearing   wearing   wearing   money"
+				"wearing   wearing   wearing   provisions";
+		}
+	}
+}

@@ -1,42 +1,42 @@
 .basics {
-    width    : 100%;
-    grid-area: basics;
-    display  : grid;
-    grid-gap : 8px;
-    grid-template-areas:
-        "name"
-        "background"
-        "special";
+	width: 100%;
+	grid-area: basics;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-areas:
+		"name"
+		"background"
+		"special";
 }
 
 @media (min-width: 500px) {
-    .basics {
-        grid-template-areas:
-            "name background"
-            "special special";
-    }
+	.basics {
+		grid-template-areas:
+			"name background"
+			"special special";
+	}
 }
 
 .basics__name {
-    grid-area: name;
+	grid-area: name;
 }
 
 .basics__background {
-    grid-area: background;
+	grid-area: background;
 }
 
 .basics__special {
-    grid-area: special;
+	grid-area: special;
 }
 
 label {
-    font-weight   : bold;
-    display       : flex;
-    flex-direction: column;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
 }
 
 .basics input,
 textarea {
-    border: 1px solid black;
-    width : 100%;
+	border: 1px solid black;
+	width: 100%;
 }
