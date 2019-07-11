@@ -16,13 +16,23 @@ export function ImportExport(props) {
 
 	const togglePrettyPrint = e => {
 		setPrettyPrint(e.target.checked);
-		setDataToImport(
-			JSON.stringify(
-				JSON.parse(dataToImport),
-				undefined,
-				prettyPrint ? 4 : 0
-			)
-		);
+		if (dataToImport) {
+			let prettyData;
+			try {
+				prettyData = JSON.stringify(
+					JSON.parse(dataToImport),
+					undefined,
+					prettyPrint ? 4 : 0
+				);
+			} catch {
+				prettyData = JSON.stringify(
+					props.character,
+					undefined,
+					prettyPrint ? 4 : 0
+				);
+			}
+			setDataToImport(prettyData);
+		}
 	};
 
 	const saveUpdate = () => {
@@ -42,6 +52,21 @@ export function ImportExport(props) {
 
 	return (
 		<div className="import-export">
+			<div>
+				<p>
+					If you would like to share or save your character, you can
+					use the text from the field below.
+				</p>
+				<p>
+					To load a character, just paste in your data. If it is in
+					the correct format, everything will load into the character
+					sheet.
+				</p>
+				<p>
+					If you want to start over, delete all the data, and you will
+					have a fresh sheet to work with.
+				</p>
+			</div>
 			<div className="import-export__controls">
 				<label for="import-export">Enter data here: </label>
 				<label className="import-export__toggle">
