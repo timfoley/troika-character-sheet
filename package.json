@@ -44,5 +44,8 @@
 			"prettier --write",
 			"git add"
 		]
+	},
+	"devDependencies": {
+		"node-sass": "^4.12.0"
 	}
 }
