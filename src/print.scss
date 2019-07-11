@@ -1,4 +1,8 @@
 @media print {
+	html {
+		font-size: 15px;
+	}
+
 	body,
 	.App {
 		*,
@@ -7,9 +11,11 @@
 		textarea,
 		label {
 			background-color: white;
+			color: black;
 		}
 
 		background-color: white;
+		color: black;
 		height: 90vh;
 
 		h1 {
@@ -40,8 +46,8 @@
 		.sheet {
 			grid-template-areas: "left  right ";
 			grid-template-columns: 1fr 1fr;
-			padding: 20px;
-			border: 1px solid var(--primary-dark);
+			padding: 0;
+			border: none;
 		}
 
 		.left-grid {
