@@ -1,5 +1,5 @@
 :root {
-	--primary-light: #fffcf5;
+	--primary-light: #fffbf3;
 	--primary-dark: #333;
 	--accent-light: #53fff4;
 	--accent-dark: #d90368;
@@ -29,6 +29,10 @@ header {
 
 h1 {
 	color: var(--accent-dark);
+}
+
+h2 {
+	font-size: 1.4rem;
 }
 
 html,
