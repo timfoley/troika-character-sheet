@@ -5,6 +5,9 @@ I wanted it to be as useful as possible while still staying nice and simple. You
 
 This is still very much a work-in-progress!
 
+# What It's Made Of
+It's mostly just React (thanks [`create-react-app`](https://facebook.github.io/create-react-app/)) with a lot of help from the amazing CSS Grid spec.
+
 ## To Dos:
 ### Definitely:
 - [ ] set up print stylesheets
