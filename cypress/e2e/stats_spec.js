@@ -37,7 +37,14 @@ describe("<Stats /> tests", () => {
 		cy.visit("/")
 			.get(".skill-stat")
 			.clear()
+			.get(".skill__box--skill-stat")
+			.each(($box, i) => {
+				cy.wrap($box).should("have.text", "-");
+			})
+			.get(".skill-stat")
+			.clear()
 			.type(8)
+			.should("have.value", "8")
 			.get(".skill__box--skill-stat")
 			.each(($box, i) => {
 				cy.wrap($box).should("have.text", "8");
