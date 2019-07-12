@@ -9,7 +9,7 @@ exports[`matches snapshot 1`] = `
   >
     Skill
     <input
-      class="stat__input"
+      class="skill-stat stat__input stat__input--main"
       type="number"
       value="0"
     />
@@ -20,7 +20,7 @@ exports[`matches snapshot 1`] = `
     <label>
       Stamina
       <input
-        class="stat__input"
+        class="stamina-remaining stat__input stat__input--main"
         max="0"
         type="number"
         value="0"
@@ -30,7 +30,7 @@ exports[`matches snapshot 1`] = `
       class="sub-label"
     >
       <input
-        class="stat__input stat__input--sub"
+        class="stamina-max stat__input stat__input--sub"
         type="number"
         value="0"
       />
@@ -43,7 +43,7 @@ exports[`matches snapshot 1`] = `
     <label>
       Luck
       <input
-        class="stat__input"
+        class="luck-remaining stat__input stat__input--main"
         max="0"
         type="number"
         value="0"
@@ -53,7 +53,7 @@ exports[`matches snapshot 1`] = `
       class="sub-label"
     >
       <input
-        class="stat__input stat__input--sub"
+        class="luck-max stat__input stat__input--sub"
         type="number"
         value="0"
       />

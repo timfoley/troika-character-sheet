@@ -15,6 +15,7 @@ exports[`matches snapshot 1`] = `
     >
       <input
         aria-label="weapon name"
+        class="weapon__name__input"
         type="text"
         value=""
       />
@@ -24,7 +25,7 @@ exports[`matches snapshot 1`] = `
     >
       <input
         aria-label="1 damage value for "
-        class="hide-spinners"
+        class="weapon__damage__input weapon__damage__input--0 hide-spinners"
         type="number"
         value="0"
       />
@@ -40,7 +41,7 @@ exports[`matches snapshot 1`] = `
     >
       <input
         aria-label="2 damage value for "
-        class="hide-spinners"
+        class="weapon__damage__input weapon__damage__input--1 hide-spinners"
         type="number"
         value="0"
       />
@@ -56,7 +57,7 @@ exports[`matches snapshot 1`] = `
     >
       <input
         aria-label="3 damage value for "
-        class="hide-spinners"
+        class="weapon__damage__input weapon__damage__input--2 hide-spinners"
         type="number"
         value="0"
       />
@@ -72,7 +73,7 @@ exports[`matches snapshot 1`] = `
     >
       <input
         aria-label="4 damage value for "
-        class="hide-spinners"
+        class="weapon__damage__input weapon__damage__input--3 hide-spinners"
         type="number"
         value="0"
       />
@@ -88,7 +89,7 @@ exports[`matches snapshot 1`] = `
     >
       <input
         aria-label="5 damage value for "
-        class="hide-spinners"
+        class="weapon__damage__input weapon__damage__input--4 hide-spinners"
         type="number"
         value="0"
       />
@@ -104,7 +105,7 @@ exports[`matches snapshot 1`] = `
     >
       <input
         aria-label="6 damage value for "
-        class="hide-spinners"
+        class="weapon__damage__input weapon__damage__input--5 hide-spinners"
         type="number"
         value="0"
       />
@@ -120,7 +121,7 @@ exports[`matches snapshot 1`] = `
     >
       <input
         aria-label="7+ damage value for "
-        class="hide-spinners"
+        class="weapon__damage__input weapon__damage__input--6 hide-spinners"
         type="number"
         value="0"
       />

@@ -9,6 +9,7 @@ exports[`matches snapshot 1`] = `
   >
     Name
     <input
+      class="basics__input basics__input--name"
       type="text"
       value=""
     />
@@ -18,6 +19,7 @@ exports[`matches snapshot 1`] = `
   >
     Background
     <input
+      class="basics__input basics__input--background"
       type="text"
       value=""
     />
@@ -27,6 +29,7 @@ exports[`matches snapshot 1`] = `
   >
     Special
     <textarea
+      class="basics__input basics__input--special"
       rows="4"
     />
   </label>

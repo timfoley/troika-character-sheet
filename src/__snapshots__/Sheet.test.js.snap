@@ -15,6 +15,7 @@ exports[`matches snapshot 1`] = `
       >
         Name
         <input
+          class="basics__input basics__input--name"
           type="text"
           value=""
         />
@@ -24,6 +25,7 @@ exports[`matches snapshot 1`] = `
       >
         Background
         <input
+          class="basics__input basics__input--background"
           type="text"
           value=""
         />
@@ -33,6 +35,7 @@ exports[`matches snapshot 1`] = `
       >
         Special
         <textarea
+          class="basics__input basics__input--special"
           rows="4"
         />
       </label>
@@ -45,7 +48,7 @@ exports[`matches snapshot 1`] = `
       >
         Skill
         <input
-          class="stat__input stat__input--main"
+          class="skill-stat stat__input stat__input--main"
           type="number"
           value="0"
         />
@@ -56,7 +59,7 @@ exports[`matches snapshot 1`] = `
         <label>
           Stamina
           <input
-            class="stat__input stat__input--main"
+            class="stamina-remaining stat__input stat__input--main"
             max="0"
             type="number"
             value="0"
@@ -66,7 +69,7 @@ exports[`matches snapshot 1`] = `
           class="sub-label"
         >
           <input
-            class="stat__input stat__input--sub"
+            class="stamina-max stat__input stat__input--sub"
             type="number"
             value="0"
           />
@@ -79,7 +82,7 @@ exports[`matches snapshot 1`] = `
         <label>
           Luck
           <input
-            class="stat__input stat__input--main"
+            class="luck-remaining stat__input stat__input--main"
             max="0"
             type="number"
             value="0"
@@ -89,7 +92,7 @@ exports[`matches snapshot 1`] = `
           class="sub-label"
         >
           <input
-            class="stat__input stat__input--sub"
+            class="luck-max stat__input stat__input--sub"
             type="number"
             value="0"
           />
@@ -288,6 +291,7 @@ exports[`matches snapshot 1`] = `
         >
           <input
             aria-label="weapon name"
+            class="weapon__name__input"
             type="text"
             value=""
           />
@@ -297,7 +301,7 @@ exports[`matches snapshot 1`] = `
         >
           <input
             aria-label="1 damage value for "
-            class="hide-spinners"
+            class="weapon__damage__input weapon__damage__input--0 hide-spinners"
             type="number"
             value="0"
           />
@@ -313,7 +317,7 @@ exports[`matches snapshot 1`] = `
         >
           <input
             aria-label="2 damage value for "
-            class="hide-spinners"
+            class="weapon__damage__input weapon__damage__input--1 hide-spinners"
             type="number"
             value="0"
           />
@@ -329,7 +333,7 @@ exports[`matches snapshot 1`] = `
         >
           <input
             aria-label="3 damage value for "
-            class="hide-spinners"
+            class="weapon__damage__input weapon__damage__input--2 hide-spinners"
             type="number"
             value="0"
           />
@@ -345,7 +349,7 @@ exports[`matches snapshot 1`] = `
         >
           <input
             aria-label="4 damage value for "
-            class="hide-spinners"
+            class="weapon__damage__input weapon__damage__input--3 hide-spinners"
             type="number"
             value="0"
           />
@@ -361,7 +365,7 @@ exports[`matches snapshot 1`] = `
         >
           <input
             aria-label="5 damage value for "
-            class="hide-spinners"
+            class="weapon__damage__input weapon__damage__input--4 hide-spinners"
             type="number"
             value="0"
           />
@@ -377,7 +381,7 @@ exports[`matches snapshot 1`] = `
         >
           <input
             aria-label="6 damage value for "
-            class="hide-spinners"
+            class="weapon__damage__input weapon__damage__input--5 hide-spinners"
             type="number"
             value="0"
           />
@@ -393,7 +397,7 @@ exports[`matches snapshot 1`] = `
         >
           <input
             aria-label="7+ damage value for "
-            class="hide-spinners"
+            class="weapon__damage__input weapon__damage__input--6 hide-spinners"
             type="number"
             value="0"
           />

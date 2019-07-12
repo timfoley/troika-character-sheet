@@ -33,7 +33,7 @@ export function Stats(props) {
 			<label className="stat skill">
 				Skill
 				<input
-					className="stat__input stat__input--main"
+					className="skill-stat stat__input stat__input--main"
 					type="number"
 					value={props.skill}
 					onChange={updateSkill}
@@ -44,7 +44,7 @@ export function Stats(props) {
 				<label>
 					Stamina
 					<input
-						className="stat__input stat__input--main"
+						className="stamina-remaining stat__input stat__input--main"
 						type="number"
 						max={props.stamina.max}
 						value={props.stamina.remaining}
@@ -53,7 +53,7 @@ export function Stats(props) {
 				</label>
 				<label className="sub-label">
 					<input
-						className="stat__input stat__input--sub"
+						className="stamina-max stat__input stat__input--sub"
 						type="number"
 						value={props.stamina.max}
 						onChange={updateMaxStamina}
@@ -65,7 +65,7 @@ export function Stats(props) {
 				<label>
 					Luck
 					<input
-						className="stat__input stat__input--main"
+						className="luck-remaining stat__input stat__input--main"
 						type="number"
 						max={props.luck.max}
 						value={props.luck.remaining}
@@ -75,7 +75,7 @@ export function Stats(props) {
 				<label className="sub-label">
 					<input
 						type="number"
-						className="stat__input stat__input--sub"
+						className="luck-max stat__input stat__input--sub"
 						value={props.luck.max}
 						onChange={updateMaxLuck}
 					/>

@@ -15,7 +15,7 @@ function DamageBoxes(props) {
 	return props.damage.map((dmgValue, i) => (
 		<div className="weapon__damage" key={props.name + "-dmg-" + i}>
 			<input
-				className="hide-spinners"
+				className={`weapon__damage__input weapon__damage__input--${i} hide-spinners`}
 				value={dmgValue}
 				aria-label={`${getRollFromIndex(i)} damage value for ${
 					props.name
@@ -77,6 +77,7 @@ export function Weapons(props) {
 					<React.Fragment key={"weapon" + index}>
 						<div className="weapon__name">
 							<input
+								className="weapon__name__input"
 								aria-label="weapon name"
 								type="text"
 								defaultValue={weapon.name}
