@@ -80,13 +80,15 @@ export function Skills(props) {
 								props.skillStat === 0 ? "zero-to-hide" : ""
 							}`}
 						>
-							{props.skillStat}
+							{isNaN(props.skillStat) ? "-" : props.skillStat}
 						</div>
 						<div
 							aria-label="skill total"
 							className={getTotalClass(skill.rank)}
 						>
-							{skill.rank + props.skillStat}
+							{isNaN(props.skillStat)
+								? "-"
+								: props.skillStat + skill.rank}
 						</div>
 					</React.Fragment>
 				))}
