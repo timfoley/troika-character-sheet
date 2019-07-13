@@ -20,6 +20,37 @@ html {
 	height: 95vh;
 }
 
+.clickable {
+	cursor: pointer;
+}
+
+.clickable:hover {
+	text-decoration: underline;
+}
+
+/* to hide the up/down arrows in the input */
+.hide-spinners::-webkit-outer-spin-button,
+.hide-spinners::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.hide-spinners {
+	-moz-appearance: textfield;
+}
+
+.smaller-font {
+	font-size: 0.8rem;
+}
+
+.even-smaller-font {
+	font-size: 0.7rem;
+}
+
+.get-random-char {
+	font-size: 1.3rem;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -28,6 +59,8 @@ header {
 }
 
 h1 {
+	margin-top: 0.4rem;
+	margin-bottom: 0.3rem;
 	color: var(--accent-dark);
 }
 
@@ -103,23 +136,4 @@ input:disabled {
 
 input[type="range"] {
 	height: 0;
-}
-
-.clickable {
-	cursor: pointer;
-}
-
-.clickable:hover {
-	text-decoration: underline;
-}
-
-/* to hide the up/down arrows in the input */
-.hide-spinners::-webkit-outer-spin-button,
-.hide-spinners::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-}
-
-.hide-spinners {
-	-moz-appearance: textfield;
 }

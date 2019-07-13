@@ -41,6 +41,7 @@
 
 	.right-grid {
 		padding-bottom: 0;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-areas:
 			"weapons   weapons   weapons   weapons"
 			"inventory inventory inventory inventory"

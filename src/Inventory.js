@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 
-import "./Inventory.css";
+import "./Inventory.scss";
 
 export function Inventory(props) {
 	const items = [];
@@ -16,17 +17,26 @@ export function Inventory(props) {
 		props.updateCharacter("inventory", newInventory);
 	};
 
+	const getItemClassName = item => {
+		const hasLongName = item.name && item.name.length > 30;
+
+		return classnames("item__input", {
+			"even-smaller-font": hasLongName,
+		});
+	};
+
 	for (let i = 0; i < 12; i++) {
 		if (props.inventory[i]) {
 			items.push(
 				<React.Fragment key={"item" + i}>
 					<li className="item">
-						<input
+						<textarea
 							id={i}
 							type="text"
 							aria-label={`Slot ${i + 1}`}
-							defaultValue={props.inventory[i].name}
+							value={props.inventory[i].name}
 							onChange={e => updateInventory(i, e.target.value)}
+							className={getItemClassName(props.inventory[i])}
 						/>
 					</li>
 				</React.Fragment>
@@ -35,11 +45,12 @@ export function Inventory(props) {
 			items.push(
 				<React.Fragment key={"item" + i}>
 					<li className="item blank">
-						<input
+						<textarea
 							id={i}
+							className="item__input"
 							type="text"
 							aria-label={`Empty slot ${i + 1}`}
-							defaultValue=""
+							value=""
 							onChange={e => updateInventory(i, e.target.value)}
 						/>
 					</li>

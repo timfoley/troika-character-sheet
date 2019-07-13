@@ -1,29 +1,31 @@
 .wearing {
-    grid-area: wearing;
+	grid-area: wearing;
 }
 
 .money {
-    grid-area: money;
+	grid-area: money;
 }
 
 .provisions {
-    grid-area: provisions;
+	grid-area: provisions;
 }
 
 .gear__label {
-    font-weight   : bold;
-    display       : flex;
-    flex-direction: column;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
 }
 
 .gear__input {
-    height       : 100%;
-    width        : 100%;
-    margin       : 0;
-    border       : 1px solid black;
-    border-radius: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	border: 1px solid black;
+	border-radius: 0;
+	font-size: 2rem;
 }
 
 .wearing textarea {
-    width: 100%;
+	font-size: 1rem;
+	width: 100%;
 }

@@ -11,9 +11,10 @@
 
 @media (min-width: 500px) {
 	.basics {
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-areas:
-			"name background"
-			"special special";
+			"name background background"
+			"special special special ";
 	}
 }
 
@@ -25,8 +26,16 @@
 	grid-area: background;
 }
 
+.basics__input--special {
+	font-size: 0.9rem;
+}
+
 .basics__special {
 	grid-area: special;
+}
+
+.basics__input--special {
+	height: 180px;
 }
 
 label {
@@ -35,8 +44,13 @@ label {
 	flex-direction: column;
 }
 
+.basics__input {
+	line-height: 1.2rem;
+}
+
 .basics input,
 textarea {
+	padding: 6px;
 	border: 1px solid black;
 	width: 100%;
 }
