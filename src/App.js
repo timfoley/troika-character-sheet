@@ -30,6 +30,12 @@ function App() {
 
 	const generateRandomCharacter = () => setCharacter(getRandomChar());
 
+	const handleGeetCharacterKeyPress = e => {
+		if (e.which === 32 || e.key === "enter") {
+			generateRandomCharacter();
+		}
+	};
+
 	return (
 		<div className="App">
 			<header>
@@ -38,6 +44,7 @@ function App() {
 					className="get-random-char clickable"
 					aria-label="generate random character"
 					onClick={generateRandomCharacter}
+					onKeyPress={handleGeetCharacterKeyPress}
 					tabIndex="0"
 				>
 					Get Random Character <span aria-hidden>🎲</span>
