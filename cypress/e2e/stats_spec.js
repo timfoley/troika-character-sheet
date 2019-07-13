@@ -21,16 +21,7 @@ describe("<Stats /> tests", () => {
 			.clear()
 			.type(char.luck.max)
 			//check values
-			.get(".skill-stat")
-			.should("have.value", char.skill.toString())
-			.get(".stamina-remaining")
-			.should("have.value", char.stamina.remaining.toString())
-			.get(".stamina-max")
-			.should("have.value", char.stamina.max.toString())
-			.get(".luck-remaining")
-			.should("have.value", char.luck.remaining.toString())
-			.get(".luck-max")
-			.should("have.value", char.luck.max.toString());
+			.assertStats(char);
 	});
 
 	it("editing Skill also updates in skills section", () => {

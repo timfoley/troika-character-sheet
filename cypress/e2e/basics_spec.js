@@ -6,16 +6,14 @@ describe("<Basics /> tests", () => {
 	it("can enter name, background, and special", () => {
 		cy.visit("/")
 			.get(".basics__input--name")
+			.clear()
 			.type(char.name)
 			.get(".basics__input--background")
+			.clear()
 			.type(char.background)
 			.get(".basics__input--special")
+			.clear()
 			.type(char.special)
-			.get(".basics__input--name")
-			.should("have.value", char.name)
-			.get(".basics__input--background")
-			.should("have.value", char.background)
-			.get(".basics__input--special")
-			.should("have.value", char.special);
+			.assertBasics(char);
 	});
 });

@@ -19,7 +19,7 @@ exports[`matches snapshot 1`] = `
   >
     Background
     <input
-      class="basics__input basics__input--background"
+      class="basics__input basics__input--background "
       type="text"
       value=""
     />

@@ -13,121 +13,121 @@ exports[`matches snapshot 1`] = `
     <li
       class="item"
     >
-      <input
+      <textarea
         aria-label="Slot 1"
+        class="item__input"
         id="0"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 2"
+        class="item__input"
         id="1"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 3"
+        class="item__input"
         id="2"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 4"
+        class="item__input"
         id="3"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 5"
+        class="item__input"
         id="4"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 6"
+        class="item__input"
         id="5"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 7"
+        class="item__input"
         id="6"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 8"
+        class="item__input"
         id="7"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 9"
+        class="item__input"
         id="8"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 10"
+        class="item__input"
         id="9"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 11"
+        class="item__input"
         id="10"
         type="text"
-        value=""
       />
     </li>
     <li
       class="item blank"
     >
-      <input
+      <textarea
         aria-label="Empty slot 12"
+        class="item__input"
         id="11"
         type="text"
-        value=""
       />
     </li>
   </ol>
