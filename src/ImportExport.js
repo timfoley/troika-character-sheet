@@ -80,6 +80,7 @@ export function ImportExport(props) {
 			</div>
 			<textarea
 				spellCheck={false}
+				className="import-export__textarea"
 				id="import-export"
 				style={{ gridArea: "text-input", height: "100%" }}
 				value={dataToImport}

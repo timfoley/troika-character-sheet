@@ -40,30 +40,53 @@ function App() {
 		<div className="App">
 			<header>
 				<h1>Troika! Character Sheet</h1>
-				<div
-					className="get-random-char clickable"
-					aria-label="generate random character"
-					onClick={generateRandomCharacter}
-					onKeyPress={handleGeetCharacterKeyPress}
-					tabIndex="0"
-				>
-					Get Random Character <span aria-hidden>🎲</span>
+				<div className="header__right">
+					<div
+						className="get-random-char clickable"
+						aria-label="generate random character"
+						onClick={generateRandomCharacter}
+						onKeyPress={handleGeetCharacterKeyPress}
+						tabIndex="0"
+					>
+						<span aria-hidden>🎲</span> Get Random Character
+					</div>
+					<div
+						className="toggle-import clickable"
+						onClick={toggleImport}
+					>
+						{importOn
+							? "◀ Return to Character"
+							: "🔃 Import/Export Data"}
+					</div>
 				</div>
 			</header>
 			{!importOn && (
 				<Sheet setCharacter={setCharacter} character={character} />
 			)}
-			<div className="toggle-import clickable" onClick={toggleImport}>
-				{importOn
-					? "◀ Return to Character"
-					: "Import/Export Character Data"}
-			</div>
 			{importOn && (
 				<ImportExport
 					character={character}
 					setCharacter={setCharacter}
 				/>
 			)}
+			<footer>
+				<div className="copyright">
+					This character sheet generator for the{" "}
+					<a href="http://troikarpg.com">Troika! RPG</a> is an
+					independent production by <span aria-hidden>😺</span>
+					<a
+						aria-label="Tim Foley on GitHub"
+						href="https://github.com/timfoley"
+					>
+						Tim Foley
+					</a>{" "}
+					and is not affiliated with the{" "}
+					<a href="https://www.melsonia.com/">
+						Melsonian Arts Council
+					</a>
+					.
+				</div>
+			</footer>
 		</div>
 	);
 }
