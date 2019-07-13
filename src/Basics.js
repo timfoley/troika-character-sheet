@@ -16,6 +16,14 @@ export function Basics(props) {
 		props.updateCharacter("special", e.target.value);
 	};
 
+	const getBackgroundClassName = () => {
+		let bgClassName = "basics__input basics__input--background ";
+		if (props.background && props.background.length > 40) {
+			bgClassName += "smaller-font";
+		}
+		return bgClassName;
+	};
+
 	return (
 		<div className="basics">
 			<label className="basics__name">
@@ -30,7 +38,7 @@ export function Basics(props) {
 			<label className="basics__background">
 				Background
 				<input
-					className="basics__input basics__input--background"
+					className={getBackgroundClassName()}
 					type="text"
 					value={props.background}
 					onChange={updateBackground}

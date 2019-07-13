@@ -80,7 +80,7 @@ export function Weapons(props) {
 								className="weapon__name__input"
 								aria-label="weapon name"
 								type="text"
-								defaultValue={weapon.name}
+								value={weapon.name}
 								onChange={e =>
 									setWeaponName(index, e.target.value)
 								}

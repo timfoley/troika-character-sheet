@@ -68,7 +68,7 @@ export function ImportExport(props) {
 				</p>
 			</div>
 			<div className="import-export__controls">
-				<label for="import-export">Enter data here: </label>
+				<label htmlFor="import-export">Enter data here: </label>
 				<label className="import-export__toggle">
 					<input
 						type="checkbox"
@@ -79,6 +79,7 @@ export function ImportExport(props) {
 				</label>
 			</div>
 			<textarea
+				spellCheck={false}
 				id="import-export"
 				style={{ gridArea: "text-input", height: "100%" }}
 				value={dataToImport}

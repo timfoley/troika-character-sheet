@@ -5,6 +5,8 @@ import "./print.scss";
 import { Sheet } from "./Sheet";
 import { ImportExport } from "./ImportExport";
 
+import getRandomChar from "./lib/getRandomChar";
+
 function App() {
 	const [importOn, setImportOn] = useState(false);
 	const [character, setCharacter] = useState();
@@ -26,10 +28,20 @@ function App() {
 
 	const toggleImport = () => setImportOn(!importOn);
 
+	const generateRandomCharacter = () => setCharacter(getRandomChar());
+
 	return (
 		<div className="App">
 			<header>
 				<h1>Troika! Character Sheet</h1>
+				<div
+					className="get-random-char clickable"
+					aria-label="generate random character"
+					onClick={generateRandomCharacter}
+					tabIndex="0"
+				>
+					Get Random Character <span aria-hidden>🎲</span>
+				</div>
 			</header>
 			{!importOn && (
 				<Sheet setCharacter={setCharacter} character={character} />
