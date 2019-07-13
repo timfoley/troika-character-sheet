@@ -16,7 +16,7 @@ export const backgrounds = [
 			"You're a wise man, a high priest, a pond-pisser, a typical but committed adherent of P!P!Ssshrp. The bloated Toad God has no church other than the periphery of ponds where the foulness catches in the reeds and no congregation other than the gnats and dragonflies. You minister to them all the same.",
 		posessions: [
 			"Sackcloth Robes; caked in stinking mud and undergrowth. +1 to Sneak rolls in marshy terrain while wearing them, -1 everywhere else ‘cos it stinks!",
-			"Large, worn wooden ladle (DMG2, 4, 4, 6, 6, 8, 10. Ignores 1 point of Armour).",
+			"Large, worn wooden ladle (DMG 2, 4, 4, 6, 6, 8, 10. Ignores 1 point of Armour).",
 		],
 		skills: [
 			"3 Spell - Drown",
@@ -58,7 +58,7 @@ export const backgrounds = [
 		text:
 			"You are Those-Filthy-Born, spawned in the hump-backed sky lit only by great black anti-suns and false light. Your mother was sailing on the golden barges or caught in some more abstract fate when she passed you, far from the protective malaise of the million spheres. You were receptive to the power and the glory at a generative time and it shows in your teratoid form.",
 		posessions: [
-			"Fusil (DMG 2, 4, 4, 6, 12, 18, 24. Ignores 1 point of Armour. Requires at least two hands to use.",
+			"Fusil (DMG 2, 4, 4, 6, 12, 18, 24. Ignores 1 point of Armour. Requires at least two hands to use.)",
 			"2d6 Plasmic cores",
 			"Sword",
 			"Velare",
