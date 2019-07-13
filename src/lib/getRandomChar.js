@@ -70,10 +70,17 @@ export default function(justStats = false) {
 	];
 
 	background.posessions.forEach(posession => {
-		if (posession.includes("(DMG")) {
+		if (posession.includes("(DMG ")) {
 			const re = /([A-Za-z \-']+)\(DMG(( [0-9]+,?)+)(\. [A-Za-z0-9+\-.'" ]+)?\)([A-Za-z0-9+\-.'" ]+)?/g;
 			const result = re.exec(posession);
-			if (result === null) console.log("null", posession);
+			if (result === null) {
+				console.log("null", posession);
+				character.inventory.push({
+					...item,
+					name: posession,
+				});
+				return;
+			}
 			const name = result[1];
 			const moreName = result[4] ? result[4] : "";
 			const damage = result[2]
