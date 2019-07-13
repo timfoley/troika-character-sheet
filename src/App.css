@@ -47,15 +47,21 @@ html {
 	font-size: 0.7rem;
 }
 
-.get-random-char {
-	font-size: 1.3rem;
-}
-
 header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: flex-end;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 12px 0;
+}
+
+.copyright {
+	font-size: 0.8rem;
 }
 
 h1 {
