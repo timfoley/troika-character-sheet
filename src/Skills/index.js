@@ -6,7 +6,7 @@ import "./Skills.css";
 import { Skill } from "./Skill";
 
 export function Skills(props) {
-	const [indexToFocus, setIndexToFocus] = useState(null);
+	const [indexToFocus, setIndexToFocus] = useState();
 
 	const setSkillName = (i, name) => {
 		const newSkills = props.skills;

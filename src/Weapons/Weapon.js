@@ -1,9 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
 import { DamageBoxes } from "./DamageBoxes";
 
 export const Weapon = props => {
+	const weaponNameInput = useRef(null);
+
+	useEffect(() => {
+		props.shouldFocus && weaponNameInput.current.focus();
+	}, [props.shouldFocus]);
+
 	const setWeaponName = e => {
 		const newWeapons = props.weapons;
 		newWeapons[props.index] = {
@@ -31,6 +37,7 @@ export const Weapon = props => {
 					type="text"
 					value={props.weapon.name}
 					onChange={setWeaponName}
+					ref={weaponNameInput}
 				/>
 			</div>
 			<DamageBoxes
@@ -47,4 +54,5 @@ Weapon.propTypes = {
 	weapon: PropTypes.object.isRequired,
 	updateCharacter: PropTypes.func.isRequired,
 	weapons: PropTypes.array.isRequired,
+	shouldFocus: PropTypes.bool,
 };

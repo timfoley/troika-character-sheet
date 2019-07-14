@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import "./Weapons.css";
@@ -6,7 +6,10 @@ import "./Weapons.css";
 import { Weapon } from "./Weapon";
 
 export function Weapons(props) {
+	const [indexToFocus, setIndexToFocus] = useState();
+
 	const addWeapon = () => {
+		setIndexToFocus(props.weapons.length);
 		props.updateCharacter("weapons", [
 			...props.weapons,
 			{ name: "", damage: [0, 0, 0, 0, 0, 0, 0] },
@@ -30,6 +33,7 @@ export function Weapons(props) {
 						index={index}
 						updateCharacter={props.updateCharacter}
 						weapons={props.weapons}
+						shouldFocus={indexToFocus === index}
 					/>
 				))}
 			</div>
