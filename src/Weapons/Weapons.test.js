@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { render } from "@testing-library/react";
 
-import { Weapons } from "./Weapons";
+import { Weapons } from "./index.js";
 
 it("renders Weapons without crashing", () => {
 	const div = document.createElement("div");
