@@ -1,18 +1,19 @@
 /* global cy */
 
-import char from "../../src/char";
+import getRandomChar from "../../src/lib/getRandomChar";
 
 describe("fill out sheet", () => {
+	const char = getRandomChar();
+	char.name = "Geoffrey";
 	it("can fill out a blank character sheet using tabs", () => {
 		cy.visit("/")
 			.clearLocalStorage()
-			.get("body")
-			.tab()
+			.get(".basics__name > .basics__input")
 			.type(char.name)
 			.tab()
 			.type(char.background)
 			.tab()
-			.type(char.special)
+			.type(char.special, { delay: 1 })
 			.assertBasics(char)
 			.tab()
 			.type(char.skill)
@@ -30,31 +31,19 @@ describe("fill out sheet", () => {
 			const skill = char.skills[i];
 			cy.tab()
 				.type(skill.name)
-				.get(".skill__name__input")
-				.eq(i)
-				.should("have.value", skill.name)
 				.tab()
-				.type(skill.rank)
-				.get(".skill__box--rank")
-				.eq(i + 1)
-				.should("have.value", skill.rank.toString());
+				.type(skill.rank);
 		}
 		for (let i = 5; i < char.skills.length; i++) {
 			const skill = char.skills[i];
 			cy.tab()
 				.type(" ")
-				.tab({ shift: true })
-				.tab({ shift: true })
+				.focused()
 				.type(skill.name)
-				.get(".skill__name__input")
-				.eq(i)
-				.should("have.value", skill.name)
 				.tab()
-				.type(skill.rank)
-				.get(".skill__box--rank")
-				.eq(i + 1)
-				.should("have.value", skill.rank.toString());
+				.type(skill.rank);
 		}
+		cy.assertSkills(char.skills);
 		cy.tab();
 
 		// for (let i = 0; i < char.weapons.length; i++) {
