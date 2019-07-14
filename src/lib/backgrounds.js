@@ -225,7 +225,7 @@ export const backgrounds = [
 		posessions: [
 			"Wooden yoke",
 			"Brown overcoat and soft doffing cap of the guild",
-			"Bale hooK (DMG 2, 2, 2, 2, 4, 8, 10. +1 on rolls to lift heavy objects)",
+			"Bale hook (DMG 2, 2, 2, 2, 4, 8, 10. +1 on rolls to lift heavy objects)",
 			"Length of rope",
 		],
 		skills: [
@@ -455,7 +455,7 @@ export const backgrounds = [
 			"Red Robes",
 			"Huge maul (DMG 1, 2, 3, 6, 12, 13, 14)",
 			"Traditional faceless metal helmet of your order (2 Armor, 4 slots)",
-			"Symbolic (but fully sized and fully functional) single headed greataxe, to help batter down the door to sin (DMG 2, 4, 8, 10, 12, 14, 18. Requires at least two hands to use.)",
+			"Symbolic--but fully sized and fully functional--single headed greataxe, to help batter down the door to sin (DMG 2, 4, 8, 10, 12, 14, 18. Requires at least two hands to use.)",
 		],
 		skills: [
 			"2 Spell - Ember",
