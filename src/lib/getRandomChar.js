@@ -46,11 +46,10 @@ export default function(justStats = false) {
 	character.background = background.name;
 
 	if (background.special) {
-		character.special = background.text + "\n~~~\n" + backgrounds.special;
+		character.special = background.text + "\n~~~\n" + background.special;
 	} else {
 		character.special = background.text;
 	}
-	character.special = background.text;
 
 	// now for skills
 	character.skills = [];
@@ -81,8 +80,8 @@ export default function(justStats = false) {
 				});
 				return;
 			}
-			const name = result[1];
-			const moreName = result[4] ? result[4] : "";
+			const name = result[1].trim();
+			const moreName = (result[4] ? result[4] : "").trim();
 			const damage = result[2]
 				.split(",")
 				.map(digit => parseInt(digit.trim()));

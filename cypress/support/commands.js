@@ -48,3 +48,34 @@ Cypress.Commands.add("assertStats", char => {
 		.get(".luck-max")
 		.should("have.value", char.luck.max.toString());
 });
+
+Cypress.Commands.add("assertSkills", skills => {
+	skills.forEach((skill, i) => {
+		cy.get(".skill__name__input")
+			.eq(i)
+			.should("have.value", skill.name)
+			.get(".skill__box--rank")
+			.eq(i + 1)
+			.should("have.value", skill.rank.toString());
+	});
+});
+
+Cypress.Commands.add("assertWeapon", (weapon, weaponIndex) => {
+	cy.get(".weapon__name__input")
+		.eq(weaponIndex)
+		.should("have.value", weapon.name);
+	for (let i = 0; i < weapon.damage.length; i++) {
+		cy.get(
+			`:nth-child(${2 + weaponIndex * 8 + i}) > .weapon__damage__input`
+		).should("have.value", weapon.damage[i].toString());
+	}
+});
+
+Cypress.Commands.add("fillWeaponDamage", (weapon, weaponIndex) => {
+	for (let i = 0; i < weapon.damage.length; i++) {
+		cy.get(`.weapon__damage__input--${weaponIndex}`)
+			.eq(i)
+			.clear()
+			.type(weapon.damage[i]);
+	}
+});

@@ -18,7 +18,7 @@ export function Inventory(props) {
 	};
 
 	const getItemClassName = item => {
-		const hasLongName = item.name && item.name.length > 30;
+		const hasLongName = item.name && item.name.length > 28;
 
 		return classnames("item__input", {
 			"even-smaller-font": hasLongName,

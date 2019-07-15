@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  class="weapons"
+>
+  <h2>
+    Weapons
+  </h2>
+  <div
+    class="weapons__grid"
+  >
+    <div
+      class="weapon__name"
+    >
+      <input
+        aria-label="weapon name"
+        class="weapon__name__input"
+        type="text"
+        value="Steak Knife"
+      />
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="1 damage value for Steak Knife"
+        class="weapon__damage__input weapon__damage__input--0 hide-spinners"
+        type="number"
+        value="2"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        1
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="2 damage value for Steak Knife"
+        class="weapon__damage__input weapon__damage__input--0 hide-spinners"
+        type="number"
+        value="2"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        2
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="3 damage value for Steak Knife"
+        class="weapon__damage__input weapon__damage__input--0 hide-spinners"
+        type="number"
+        value="2"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        3
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="4 damage value for Steak Knife"
+        class="weapon__damage__input weapon__damage__input--0 hide-spinners"
+        type="number"
+        value="2"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        4
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="5 damage value for Steak Knife"
+        class="weapon__damage__input weapon__damage__input--0 hide-spinners"
+        type="number"
+        value="4"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        5
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="6 damage value for Steak Knife"
+        class="weapon__damage__input weapon__damage__input--0 hide-spinners"
+        type="number"
+        value="8"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        6
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="7+ damage value for Steak Knife"
+        class="weapon__damage__input weapon__damage__input--0 hide-spinners"
+        type="number"
+        value="10"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        7+
+      </div>
+    </div>
+    <div
+      class="weapon__name"
+    >
+      <input
+        aria-label="weapon name"
+        class="weapon__name__input"
+        type="text"
+        value="Meat Tenderizer"
+      />
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="1 damage value for Meat Tenderizer"
+        class="weapon__damage__input weapon__damage__input--1 hide-spinners"
+        type="number"
+        value="1"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        1
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="2 damage value for Meat Tenderizer"
+        class="weapon__damage__input weapon__damage__input--1 hide-spinners"
+        type="number"
+        value="2"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        2
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="3 damage value for Meat Tenderizer"
+        class="weapon__damage__input weapon__damage__input--1 hide-spinners"
+        type="number"
+        value="4"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        3
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="4 damage value for Meat Tenderizer"
+        class="weapon__damage__input weapon__damage__input--1 hide-spinners"
+        type="number"
+        value="6"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        4
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="5 damage value for Meat Tenderizer"
+        class="weapon__damage__input weapon__damage__input--1 hide-spinners"
+        type="number"
+        value="8"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        5
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="6 damage value for Meat Tenderizer"
+        class="weapon__damage__input weapon__damage__input--1 hide-spinners"
+        type="number"
+        value="10"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        6
+      </div>
+    </div>
+    <div
+      class="weapon__damage"
+    >
+      <input
+        aria-label="7+ damage value for Meat Tenderizer"
+        class="weapon__damage__input weapon__damage__input--1 hide-spinners"
+        type="number"
+        value="12"
+      />
+      <div
+        aria-hidden="true"
+        class="weapon__damage__roll"
+      >
+        7+
+      </div>
+    </div>
+  </div>
+  <div
+    class="weapons__add-button clickable"
+    tabindex="0"
+  >
+    Add Weapon
+  </div>
+</div>
+`;

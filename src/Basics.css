@@ -46,6 +46,7 @@ label {
 
 .basics__input {
 	line-height: 1.2rem;
+	margin-top: 4px;
 }
 
 .basics input,
