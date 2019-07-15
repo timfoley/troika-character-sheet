@@ -71,7 +71,7 @@ footer {
 .copyright {
 	font-size: 0.8rem;
 }
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Space+Mono:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Anonymous+Pro:400,700&display=swap");
 
 h1,
 h2 {
@@ -92,7 +92,7 @@ input,
 textarea,
 li,
 .skill__box {
-	font-family: "Space Mono", monospace;
+	font-family: "Anonymous Pro", monospace;
 	color: black;
 }
 
