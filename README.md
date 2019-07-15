@@ -1,4 +1,6 @@
 # Online Troika! Character Sheet
+Test it out at: http://candy-thistle.surge.sh/
+
 This is my version of an online character sheet for the [Troika!](https://www.troikarpg.com/#!) tabletop roleplaying game.
 
 I wanted it to be as useful as possible while still staying nice and simple. Your character data is saved to localStorage whenever you make an update, and if you want to "save" or share a character, you can paste JSON data into a text box.
