@@ -51,6 +51,7 @@ export function Basics(props) {
 					rows="4"
 					value={props.special}
 					onChange={updateSpecial}
+					spellCheck={false}
 				/>
 			</label>
 		</div>

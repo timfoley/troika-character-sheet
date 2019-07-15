@@ -23,6 +23,7 @@
 	border: 1px solid black;
 	border-radius: 0;
 	font-size: 2rem;
+	margin-top: 4px;
 }
 
 .wearing textarea {
